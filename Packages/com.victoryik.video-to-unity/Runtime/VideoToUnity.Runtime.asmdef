@@ -1,0 +1,7 @@
+{
+  "name": "VideoToUnity.Runtime",
+  "rootNamespace": "VideoToUnity",
+  "references": [
+    "UnityEngine.UI"
+  ]
+}

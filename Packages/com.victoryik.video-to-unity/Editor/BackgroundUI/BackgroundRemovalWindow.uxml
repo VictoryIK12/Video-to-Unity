@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:ScrollView name="background-window" class="background-window">
+        <ui:Label text="MP4 배경 분리" class="background-title" />
+        <ui:Label text="색상 기반 배경 제거입니다. 장면을 의미적으로 추적하는 AI가 아니며, 보호 영역은 클립 전체에 고정됩니다." class="background-description background-notice" />
+        <ui:VisualElement name="source-section" class="background-section" />
+        <ui:VisualElement name="analysis-section" class="background-section" />
+        <ui:VisualElement name="region-section" class="background-section" />
+        <ui:VisualElement name="preview-section" class="background-section">
+            <ui:Label text="미리보기" class="background-heading" />
+            <ui:VisualElement class="background-preview-row">
+                <ui:VisualElement class="background-preview-column">
+                    <ui:Label text="원본" class="background-preview-caption" />
+                    <ui:VisualElement name="original-stage" class="background-preview-stage">
+                        <ui:Image name="original-image" class="background-preview-image background-hidden" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="background-preview-column">
+                    <ui:Label text="체커보드 합성" class="background-preview-caption" />
+                    <ui:VisualElement name="result-stage" class="background-preview-stage">
+                        <ui:Image name="checker-image" class="background-checker" scale-mode="ScaleToFit" />
+                        <ui:Image name="result-image" class="background-preview-image background-hidden" />
+                        <ui:VisualElement name="outline-layer" class="background-outline-layer" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label text="결과의 사각형을 끌어 이동할 수 있습니다. 빈 곳을 끌면 새 고정 영역을 그립니다. 좌표는 원본의 왼쪽 위를 0,0으로 하는 정규화 좌표입니다." class="background-description" />
+        </ui:VisualElement>
+        <ui:VisualElement name="output-section" class="background-section" />
+        <ui:VisualElement name="status-section" class="background-section" />
+        <ui:VisualElement name="result-section" class="background-section background-hidden" />
+    </ui:ScrollView>
+</ui:UXML>

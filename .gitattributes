@@ -1,0 +1,20 @@
+* text=auto
+.gitattributes text eol=lf
+*.cs text eol=lf
+*.shader text eol=lf
+*.uss text eol=lf
+*.uxml text eol=lf
+*.meta text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.asmdef text eol=lf
+*.py text eol=lf
+*.ps1 text eol=lf
+*.patch -text
+*.unitypackage -text
+*.mp4 binary
+*.mov binary
+*.webm binary
+*.zip binary
+*.tgz binary

@@ -1,0 +1,54 @@
+.video-effects-window {
+    padding: 12px;
+}
+.video-effects-title {
+    font-size: 19px;
+    -unity-font-style: bold;
+    margin-bottom: 4px;
+}
+.video-effects-description {
+    white-space: normal;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+.video-effects-section {
+    margin-top: 12px;
+    padding: 10px;
+    border-width: 1px;
+    border-color: rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+}
+.video-effects-heading {
+    -unity-font-style: bold;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.video-effects-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+.video-effects-row > Button {
+    flex-grow: 1;
+    margin-right: 4px;
+    min-height: 26px;
+}
+.video-effects-primary {
+    min-height: 32px;
+    margin-top: 8px;
+    -unity-font-style: bold;
+}
+.video-effects-hidden {
+    display: none;
+}
+.video-effects-section > .unity-base-field {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.video-effects-section .unity-base-field__label {
+    min-width: 140px;
+}
+.video-effects-section .unity-help-box {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}

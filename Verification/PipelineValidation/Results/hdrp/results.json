@@ -1,0 +1,644 @@
+{
+    "pipeline": "hdrp",
+    "unity": "6000.3.23f1",
+    "gpu": "NVIDIA GeForce RTX 5080",
+    "graphicsApi": "Direct3D11",
+    "colorSpace": "Linear",
+    "pipelineAsset": "UnityEngine.Rendering.HighDefinition.HDRenderPipelineAsset",
+    "renderPipelineInstance": "UnityEngine.Rendering.HighDefinition.HDRenderPipeline",
+    "fixture": "packed-alpha.mp4",
+    "fixtureSha256": "548C364E4B1DB1A2244A26C973886097E0FF7E0330CA872F04BD8D7B60695CA3",
+    "method": "Native VideoPlayer -> VideoEffectPlayer/View -> actual uGUI Canvas -> SRP camera.targetTexture; CPU ReadPixels after rendered frames. No Graphics.Blit.",
+    "error": "",
+    "width": 256,
+    "height": 128,
+    "tolerance": 0.07000000029802323,
+    "passed": true,
+    "settings": [
+        "HDAdditionalCameraData.clearColorMode=Color",
+        "HDAdditionalCameraData.backgroundColorHDR=RGBA(0.000, 0.000, 1.000, 0.000)",
+        "HDAdditionalCameraData.antialiasing=None",
+        "HDAdditionalCameraData.volumeLayerMask=UnityEngine.LayerMask",
+        "HDAdditionalCameraData.customRenderingSettings=True",
+        "HDRP FrameSettings override Postprocess=false",
+        "HDRP FrameSettings override ExposureControl=false"
+    ],
+    "cases": [
+        {
+            "name": "background",
+            "renderMode": "none",
+            "mask": "none",
+            "capture": "background.png",
+            "passed": true,
+            "decoderFrame": 7,
+            "decoderTime": 0.5833331015375847,
+            "cameraFrames": 11,
+            "samples": [
+                {
+                    "name": "transparent",
+                    "x": 32,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                },
+                {
+                    "name": "opaqueBlack",
+                    "x": 96,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                },
+                {
+                    "name": "halfRed",
+                    "x": 160,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                },
+                {
+                    "name": "opaqueGreenOrClipped",
+                    "x": 224,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                }
+            ]
+        },
+        {
+            "name": "WorldSpace-none",
+            "renderMode": "WorldSpace",
+            "mask": "none",
+            "capture": "WorldSpace-none.png",
+            "passed": true,
+            "decoderFrame": 7,
+            "decoderTime": 0.5833331015375847,
+            "cameraFrames": 22,
+            "samples": [
+                {
+                    "name": "transparent",
+                    "x": 32,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                },
+                {
+                    "name": "opaqueBlack",
+                    "x": 96,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
+                        "a": 1.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
+                        "a": 1.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                },
+                {
+                    "name": "halfRed",
+                    "x": 160,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.50244140625,
+                        "g": 0.0,
+                        "b": 0.49609375,
+                        "a": 0.50390625
+                    },
+                    "expected": {
+                        "r": 0.5,
+                        "g": 0.0,
+                        "b": 0.5,
+                        "a": 0.5
+                    },
+                    "maxError": 0.00390625,
+                    "passed": true
+                },
+                {
+                    "name": "opaqueGreenOrClipped",
+                    "x": 224,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.99853515625,
+                        "b": 0.0,
+                        "a": 1.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 1.0,
+                        "b": 0.0,
+                        "a": 1.0
+                    },
+                    "maxError": 0.00146484375,
+                    "passed": true
+                }
+            ]
+        },
+        {
+            "name": "WorldSpace-Mask",
+            "renderMode": "WorldSpace",
+            "mask": "Mask",
+            "capture": "WorldSpace-Mask.png",
+            "passed": true,
+            "decoderFrame": 7,
+            "decoderTime": 0.5833331015375847,
+            "cameraFrames": 34,
+            "samples": [
+                {
+                    "name": "transparent",
+                    "x": 32,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                },
+                {
+                    "name": "opaqueBlack",
+                    "x": 96,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
+                        "a": 1.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
+                        "a": 1.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                },
+                {
+                    "name": "halfRed",
+                    "x": 160,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.50244140625,
+                        "g": 0.0,
+                        "b": 0.49609375,
+                        "a": 0.50390625
+                    },
+                    "expected": {
+                        "r": 0.5,
+                        "g": 0.0,
+                        "b": 0.5,
+                        "a": 0.5
+                    },
+                    "maxError": 0.00390625,
+                    "passed": true
+                },
+                {
+                    "name": "opaqueGreenOrClipped",
+                    "x": 224,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                }
+            ]
+        },
+        {
+            "name": "WorldSpace-RectMask2D",
+            "renderMode": "WorldSpace",
+            "mask": "RectMask2D",
+            "capture": "WorldSpace-RectMask2D.png",
+            "passed": true,
+            "decoderFrame": 7,
+            "decoderTime": 0.5833331015375847,
+            "cameraFrames": 46,
+            "samples": [
+                {
+                    "name": "transparent",
+                    "x": 32,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                },
+                {
+                    "name": "opaqueBlack",
+                    "x": 96,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
+                        "a": 1.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
+                        "a": 1.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                },
+                {
+                    "name": "halfRed",
+                    "x": 160,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.50244140625,
+                        "g": 0.0,
+                        "b": 0.49609375,
+                        "a": 0.50390625
+                    },
+                    "expected": {
+                        "r": 0.5,
+                        "g": 0.0,
+                        "b": 0.5,
+                        "a": 0.5
+                    },
+                    "maxError": 0.00390625,
+                    "passed": true
+                },
+                {
+                    "name": "opaqueGreenOrClipped",
+                    "x": 224,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                }
+            ]
+        },
+        {
+            "name": "ScreenSpaceCamera-none",
+            "renderMode": "ScreenSpaceCamera",
+            "mask": "none",
+            "capture": "ScreenSpaceCamera-none.png",
+            "passed": true,
+            "decoderFrame": 7,
+            "decoderTime": 0.5833331015375847,
+            "cameraFrames": 58,
+            "samples": [
+                {
+                    "name": "transparent",
+                    "x": 32,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                },
+                {
+                    "name": "opaqueBlack",
+                    "x": 96,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
+                        "a": 1.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
+                        "a": 1.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                },
+                {
+                    "name": "halfRed",
+                    "x": 160,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.50244140625,
+                        "g": 0.0,
+                        "b": 0.49609375,
+                        "a": 0.50390625
+                    },
+                    "expected": {
+                        "r": 0.5,
+                        "g": 0.0,
+                        "b": 0.5,
+                        "a": 0.5
+                    },
+                    "maxError": 0.00390625,
+                    "passed": true
+                },
+                {
+                    "name": "opaqueGreenOrClipped",
+                    "x": 224,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.99853515625,
+                        "b": 0.0,
+                        "a": 1.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 1.0,
+                        "b": 0.0,
+                        "a": 1.0
+                    },
+                    "maxError": 0.00146484375,
+                    "passed": true
+                }
+            ]
+        },
+        {
+            "name": "ScreenSpaceCamera-Mask",
+            "renderMode": "ScreenSpaceCamera",
+            "mask": "Mask",
+            "capture": "ScreenSpaceCamera-Mask.png",
+            "passed": true,
+            "decoderFrame": 7,
+            "decoderTime": 0.5833331015375847,
+            "cameraFrames": 70,
+            "samples": [
+                {
+                    "name": "transparent",
+                    "x": 32,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                },
+                {
+                    "name": "opaqueBlack",
+                    "x": 96,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
+                        "a": 1.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
+                        "a": 1.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                },
+                {
+                    "name": "halfRed",
+                    "x": 160,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.50244140625,
+                        "g": 0.0,
+                        "b": 0.49609375,
+                        "a": 0.50390625
+                    },
+                    "expected": {
+                        "r": 0.5,
+                        "g": 0.0,
+                        "b": 0.5,
+                        "a": 0.5
+                    },
+                    "maxError": 0.00390625,
+                    "passed": true
+                },
+                {
+                    "name": "opaqueGreenOrClipped",
+                    "x": 224,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                }
+            ]
+        },
+        {
+            "name": "ScreenSpaceCamera-RectMask2D",
+            "renderMode": "ScreenSpaceCamera",
+            "mask": "RectMask2D",
+            "capture": "ScreenSpaceCamera-RectMask2D.png",
+            "passed": true,
+            "decoderFrame": 7,
+            "decoderTime": 0.5833331015375847,
+            "cameraFrames": 82,
+            "samples": [
+                {
+                    "name": "transparent",
+                    "x": 32,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                },
+                {
+                    "name": "opaqueBlack",
+                    "x": 96,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
+                        "a": 1.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0,
+                        "a": 1.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                },
+                {
+                    "name": "halfRed",
+                    "x": 160,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.50244140625,
+                        "g": 0.0,
+                        "b": 0.49609375,
+                        "a": 0.50390625
+                    },
+                    "expected": {
+                        "r": 0.5,
+                        "g": 0.0,
+                        "b": 0.5,
+                        "a": 0.5
+                    },
+                    "maxError": 0.00390625,
+                    "passed": true
+                },
+                {
+                    "name": "opaqueGreenOrClipped",
+                    "x": 224,
+                    "y": 96,
+                    "actual": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "expected": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 1.0,
+                        "a": 0.0
+                    },
+                    "maxError": 0.0,
+                    "passed": true
+                }
+            ]
+        }
+    ]
+}

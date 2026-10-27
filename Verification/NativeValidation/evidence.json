@@ -1,0 +1,1965 @@
+{
+  "date": "2026-10-27",
+  "platform": "Windows",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "api": "Direct3D11",
+  "computer_use": false,
+  "native_batch": true,
+  "passed": 348,
+  "failed": 0,
+  "skipped": 0,
+  "runs": [
+    {
+      "unity": "2022.3.62f3",
+      "pipeline": "Built-in",
+      "color_space": "gamma",
+      "mode": "editmode",
+      "packages": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.timeline": "1.7.7",
+        "com.unity.test-framework": "1.1.33"
+      },
+      "passed": 82,
+      "failed": 0,
+      "skipped": 0,
+      "native_xml_sha256": "1a66f7e0225cee47296ec4ceded8f95bcf18294d66711f4859fe8df083acfe69",
+      "started_utc": "2026-10-27 05:01:55Z",
+      "ended_utc": "2026-10-27 05:02:11Z",
+      "cases": [
+        {
+          "name": "VideoToUnity.Tests.BackgroundBackendAuditTests.ParallelMatteMatchesSequentialAlgorithmByteForByte",
+          "result": "Passed",
+          "duration_seconds": 0.050494
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundBackendAuditTests.ToolStartFailuresNameTheToolButNotTheWorkingDirectory",
+          "result": "Passed",
+          "duration_seconds": 0.036877
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.AnalyzeThenPreviewKeepsEnclosedBlackAndRemovesOuterBackground",
+          "result": "Passed",
+          "duration_seconds": 1.016509
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.CancelledPreviewLeavesOperationIdle",
+          "result": "Passed",
+          "duration_seconds": 0.027248
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.ExistingOutputIsRejectedBeforeAnyOverwrite",
+          "result": "Passed",
+          "duration_seconds": 0.02396
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.NativeAlphaUiExportImportsAndRendersProtectedBlack",
+          "result": "Passed",
+          "duration_seconds": 1.917376
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.PackedUiExportImportsAndRendersProtectedBlack",
+          "result": "Passed",
+          "duration_seconds": 1.777718
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.WindowCreatesItsNativeToolkitTreeWithoutOpeningAWindow",
+          "result": "Passed",
+          "duration_seconds": 0.02856
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.BorderConnectionPreservesEnclosedBlackArtwork",
+          "result": "Passed",
+          "duration_seconds": 0.00062
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.CancelledFrameDoesNotStartWritingOutput",
+          "result": "Passed",
+          "duration_seconds": 0.000347
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.DetectsBorderBlackWithoutIncludingForeground",
+          "result": "Passed",
+          "duration_seconds": 0.00267
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.DetectsColoredBackgroundWithCompressionNoise",
+          "result": "Passed",
+          "duration_seconds": 0.00052
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.MixedBordersRequireExplicitManualChoice",
+          "result": "Passed",
+          "duration_seconds": 0.000366
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.ProtectedRectangleUsesTopLeftCoordinatesAndPreservesBlack",
+          "result": "Passed",
+          "duration_seconds": 0.000233
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.RejectsInvalidSettingsAndAliasedBuffers",
+          "result": "Passed",
+          "duration_seconds": 0.000378
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.SessionSnapshotsOptionsAndDoesNotModifySource",
+          "result": "Passed",
+          "duration_seconds": 0.000571
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.SoftMatteReturnsStraightColorThatRecompositesOverBlack",
+          "result": "Passed",
+          "duration_seconds": 0.000903
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.TemporalStabilizationDoesNotLeaveTrailsOnNewBackground",
+          "result": "Passed",
+          "duration_seconds": 0.000261
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.TransparentSourcePixelsRemainTransparentInsideProtection",
+          "result": "Passed",
+          "duration_seconds": 0.000176
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.ChangedSettingsMarkPreviewAsStale",
+          "result": "Passed",
+          "duration_seconds": 0.002359
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.FullRegionListPreservesEveryRegionOnRejectedAdd",
+          "result": "Passed",
+          "duration_seconds": 0.337006
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.LocalValidationErrorSurvivesIdlePolling",
+          "result": "Passed",
+          "duration_seconds": 0.001776
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.ManualBlackAndGreenPresetsRetainProtectedRegions",
+          "result": "Passed",
+          "duration_seconds": 0.001857
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.NumericRegionFieldShowsClampedStoredValue",
+          "result": "Passed",
+          "duration_seconds": 0.570319
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.SourceChangeClearsColorPickerAndPreview",
+          "result": "Passed",
+          "duration_seconds": 0.001785
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.ColorPickerClampsInclusiveRightAndBottomEdges",
+          "result": "Passed",
+          "duration_seconds": 0.000857
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.ColorPickerRejectsLetterboxAndInvalidCoordinates",
+          "result": "Passed",
+          "duration_seconds": 0.000255
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.ColorPickerRejectsMalformedBuffersWithoutReading",
+          "result": "Passed",
+          "duration_seconds": 0.000188
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.ColorPickerUsesTopLeftBufferOrigin",
+          "result": "Passed",
+          "duration_seconds": 0.000112
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.FullRegionListCannotAllocateAnotherRegion",
+          "result": "Passed",
+          "duration_seconds": 0.000183
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.InvalidPreviewGeometryCannotBeSampled",
+          "result": "Passed",
+          "duration_seconds": 9.8e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.PortraitPreviewSampleAccountsForHorizontalLetterbox",
+          "result": "Passed",
+          "duration_seconds": 0.000171
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.RegionNormalizationRemainsFiniteAndInsideImage",
+          "result": "Passed",
+          "duration_seconds": 0.000271
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.UnequalStagesKeepPreviewBoundsInsideTheirOwnContent",
+          "result": "Passed",
+          "duration_seconds": 0.00059
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.CreationUndoRedoKeepsTheImageEnabled",
+          "result": "Passed",
+          "duration_seconds": 0.120404
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.EditorWindowBuildsItsToolkitTreeWithoutOpeningAWindow",
+          "result": "Passed",
+          "duration_seconds": 0.075284
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.ExistingCanvasAndWorldPlacementUseTheRequestedParentAndWidth",
+          "result": "Passed",
+          "duration_seconds": 0.062541
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.NativeAlphaImportAndPlaybackPreserveCoverage",
+          "result": "Passed",
+          "duration_seconds": 0.178365
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.PackedImportDisablesDefaultAndExistingStandaloneTranscoding",
+          "result": "Passed",
+          "duration_seconds": 0.197116
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.SceneReloadPreservesTheOriginalImageReferences",
+          "result": "Passed",
+          "duration_seconds": 0.183357
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.AlphaAndDirectModesSaveReusableEffectsInOneWindow",
+          "result": "Passed",
+          "duration_seconds": 5.953174
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.ChangingSourceDropsPreviousMasksAndRejectsStaleAdd",
+          "result": "Passed",
+          "duration_seconds": 0.875133
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DragAnalyzePreviewAddAndUndoInOneWindow",
+          "result": "Passed",
+          "duration_seconds": 1.44724
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"movie.MP4\",True)",
+          "result": "Passed",
+          "duration_seconds": 0.00048
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"clip.mov\",True)",
+          "result": "Passed",
+          "duration_seconds": 7.1e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"picture.png\",False)",
+          "result": "Passed",
+          "duration_seconds": 4.2e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"script.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 3.2e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.OpaquePreviewDoesNotModifySourceAlpha",
+          "result": "Passed",
+          "duration_seconds": 0.000285
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.PackedPreviewReadsRightHalfAlphaAndPreservesBlackArtwork",
+          "result": "Passed",
+          "duration_seconds": 0.000188
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.RecommendationKeepsPotentialAlphaEvenWithUniformBorders",
+          "result": "Passed",
+          "duration_seconds": 0.000209
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.UncertainBackgroundIsNeverAutomaticallyRemoved",
+          "result": "Passed",
+          "duration_seconds": 0.00012
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchiveHashRejectsTampering",
+          "result": "Passed",
+          "duration_seconds": 0.005653
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"root/bin/ffmpeg.exe\",True)",
+          "result": "Passed",
+          "duration_seconds": 0.00084
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"../ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000554
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"root/../../ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000522
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"root\\\\..\\\\ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000515
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"/tmp/ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000463
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"C:/ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.00044
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"root/ffmpeg.exe:payload\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000576
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.CancelledExtractionDoesNotPublishExecutables",
+          "result": "Passed",
+          "duration_seconds": 0.016067
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ExecutableLookupIgnoresRelativePathEntries",
+          "result": "Passed",
+          "duration_seconds": 0.00101
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ExtractionCopiesOnlyRequiredExecutablesAndNotices",
+          "result": "Passed",
+          "duration_seconds": 0.015144
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ExtractionRejectsMissingProbeAndDuplicateExecutables",
+          "result": "Passed",
+          "duration_seconds": 0.012689
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ExtractionRejectsTraversalBeforeWritingOutsideDestination",
+          "result": "Passed",
+          "duration_seconds": 0.005761
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.AdditiveKeepsBackgroundAndBlackContributesNothing",
+          "result": "Passed",
+          "duration_seconds": 0.00273
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.AspectFitKeepsGeometry",
+          "result": "Passed",
+          "duration_seconds": 0.00044
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.KeyModesRemoveTheirBackground",
+          "result": "Passed",
+          "duration_seconds": 0.001432
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.MissingVideoIsActionable",
+          "result": "Passed",
+          "duration_seconds": 0.000228
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.NativeAlphaPreservesOpaqueBlackAndHalfAlpha",
+          "result": "Passed",
+          "duration_seconds": 0.001545
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.OpaqueIgnoresSourceAlpha",
+          "result": "Passed",
+          "duration_seconds": 0.000888
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.PackedAlphaRestoresBlackAndTransparency",
+          "result": "Passed",
+          "duration_seconds": 0.00119
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathPreservesUnicodeAndReservedCharacters",
+          "result": "Passed",
+          "duration_seconds": 0.003178
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathsCannotEscapeRoot(\"../escape.mp4\")",
+          "result": "Passed",
+          "duration_seconds": 0.00024
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathsCannotEscapeRoot(\"folder/../../escape.mp4\")",
+          "result": "Passed",
+          "duration_seconds": 4.3e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathsCannotEscapeRoot(\"/absolute.mp4\")",
+          "result": "Passed",
+          "duration_seconds": 4.5e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathsCannotEscapeRoot(\"C:/absolute.mp4\")",
+          "result": "Passed",
+          "duration_seconds": 3.4e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.ViewDoesNotPersistDisabledImageAndRestoresOriginalMaterial",
+          "result": "Passed",
+          "duration_seconds": 0.000547
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.FinalScrubIsNotLostOrRepeatedForever",
+          "result": "Passed",
+          "duration_seconds": 0.528386
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.PackedNativeDecoderPreservesCoverage",
+          "result": "Passed",
+          "duration_seconds": 0.016562
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.PreparePlayPauseResumeAndStop",
+          "result": "Passed",
+          "duration_seconds": 0.597317
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.StopDuringPreparationCanReplay",
+          "result": "Passed",
+          "duration_seconds": 0.016319
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.TimelineAppliesClipInAndSpeedOnceAndRestoresBinding",
+          "result": "Passed",
+          "duration_seconds": 0.044108
+        }
+      ]
+    },
+    {
+      "unity": "2022.3.62f3",
+      "pipeline": "Built-in",
+      "color_space": "gamma",
+      "mode": "playmode",
+      "packages": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.timeline": "1.7.7",
+        "com.unity.test-framework": "1.1.33"
+      },
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "native_xml_sha256": "3ec208c5b4896d48c478f7829560b7171e237810a8270f8622a2fe7405ca58b5",
+      "started_utc": "2026-10-27 05:02:22Z",
+      "ended_utc": "2026-10-27 05:02:25Z",
+      "cases": [
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.AutoPlayUsesUnscaledTimeAndDisablingReleasesTheDecoder",
+          "result": "Passed",
+          "duration_seconds": 0.518545
+        },
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.LoopingRaisesLoopEventsWithoutCompletion",
+          "result": "Passed",
+          "duration_seconds": 1.02043
+        },
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.MultipleViewsShareTheSameDecoderTexture",
+          "result": "Passed",
+          "duration_seconds": 0.028211
+        },
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.NaturalCompletionOccursOnceAndCanHoldTheFinalFrame",
+          "result": "Passed",
+          "duration_seconds": 1.215037
+        },
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.WorldCanvasRendersVideoAndRespectsRectAndStencilMasks",
+          "result": "Passed",
+          "duration_seconds": 0.039363
+        }
+      ]
+    },
+    {
+      "unity": "2022.3.62f3",
+      "pipeline": "Built-in",
+      "color_space": "linear",
+      "mode": "editmode",
+      "packages": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.timeline": "1.7.7",
+        "com.unity.test-framework": "1.1.33"
+      },
+      "passed": 82,
+      "failed": 0,
+      "skipped": 0,
+      "native_xml_sha256": "c4d417720efc8151e561d0281c05f289a7acabc16c2ab942768d5ae26628f850",
+      "started_utc": "2026-10-27 05:02:41Z",
+      "ended_utc": "2026-10-27 05:02:58Z",
+      "cases": [
+        {
+          "name": "VideoToUnity.Tests.BackgroundBackendAuditTests.ParallelMatteMatchesSequentialAlgorithmByteForByte",
+          "result": "Passed",
+          "duration_seconds": 0.052187
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundBackendAuditTests.ToolStartFailuresNameTheToolButNotTheWorkingDirectory",
+          "result": "Passed",
+          "duration_seconds": 0.035538
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.AnalyzeThenPreviewKeepsEnclosedBlackAndRemovesOuterBackground",
+          "result": "Passed",
+          "duration_seconds": 0.965823
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.CancelledPreviewLeavesOperationIdle",
+          "result": "Passed",
+          "duration_seconds": 0.06544
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.ExistingOutputIsRejectedBeforeAnyOverwrite",
+          "result": "Passed",
+          "duration_seconds": 0.027804
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.NativeAlphaUiExportImportsAndRendersProtectedBlack",
+          "result": "Passed",
+          "duration_seconds": 1.942023
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.PackedUiExportImportsAndRendersProtectedBlack",
+          "result": "Passed",
+          "duration_seconds": 1.860701
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.WindowCreatesItsNativeToolkitTreeWithoutOpeningAWindow",
+          "result": "Passed",
+          "duration_seconds": 0.028354
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.BorderConnectionPreservesEnclosedBlackArtwork",
+          "result": "Passed",
+          "duration_seconds": 0.000966
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.CancelledFrameDoesNotStartWritingOutput",
+          "result": "Passed",
+          "duration_seconds": 0.000423
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.DetectsBorderBlackWithoutIncludingForeground",
+          "result": "Passed",
+          "duration_seconds": 0.000479
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.DetectsColoredBackgroundWithCompressionNoise",
+          "result": "Passed",
+          "duration_seconds": 0.000494
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.MixedBordersRequireExplicitManualChoice",
+          "result": "Passed",
+          "duration_seconds": 0.001583
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.ProtectedRectangleUsesTopLeftCoordinatesAndPreservesBlack",
+          "result": "Passed",
+          "duration_seconds": 0.000247
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.RejectsInvalidSettingsAndAliasedBuffers",
+          "result": "Passed",
+          "duration_seconds": 0.000636
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.SessionSnapshotsOptionsAndDoesNotModifySource",
+          "result": "Passed",
+          "duration_seconds": 0.000316
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.SoftMatteReturnsStraightColorThatRecompositesOverBlack",
+          "result": "Passed",
+          "duration_seconds": 0.000359
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.TemporalStabilizationDoesNotLeaveTrailsOnNewBackground",
+          "result": "Passed",
+          "duration_seconds": 0.000287
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.TransparentSourcePixelsRemainTransparentInsideProtection",
+          "result": "Passed",
+          "duration_seconds": 0.000202
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.ChangedSettingsMarkPreviewAsStale",
+          "result": "Passed",
+          "duration_seconds": 0.00262
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.FullRegionListPreservesEveryRegionOnRejectedAdd",
+          "result": "Passed",
+          "duration_seconds": 0.385338
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.LocalValidationErrorSurvivesIdlePolling",
+          "result": "Passed",
+          "duration_seconds": 0.002228
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.ManualBlackAndGreenPresetsRetainProtectedRegions",
+          "result": "Passed",
+          "duration_seconds": 0.002252
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.NumericRegionFieldShowsClampedStoredValue",
+          "result": "Passed",
+          "duration_seconds": 0.582905
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.SourceChangeClearsColorPickerAndPreview",
+          "result": "Passed",
+          "duration_seconds": 0.001987
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.ColorPickerClampsInclusiveRightAndBottomEdges",
+          "result": "Passed",
+          "duration_seconds": 0.000628
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.ColorPickerRejectsLetterboxAndInvalidCoordinates",
+          "result": "Passed",
+          "duration_seconds": 0.000164
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.ColorPickerRejectsMalformedBuffersWithoutReading",
+          "result": "Passed",
+          "duration_seconds": 0.000164
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.ColorPickerUsesTopLeftBufferOrigin",
+          "result": "Passed",
+          "duration_seconds": 8.7e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.FullRegionListCannotAllocateAnotherRegion",
+          "result": "Passed",
+          "duration_seconds": 0.000247
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.InvalidPreviewGeometryCannotBeSampled",
+          "result": "Passed",
+          "duration_seconds": 0.000252
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.PortraitPreviewSampleAccountsForHorizontalLetterbox",
+          "result": "Passed",
+          "duration_seconds": 0.000213
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.RegionNormalizationRemainsFiniteAndInsideImage",
+          "result": "Passed",
+          "duration_seconds": 0.000461
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.UnequalStagesKeepPreviewBoundsInsideTheirOwnContent",
+          "result": "Passed",
+          "duration_seconds": 0.001047
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.CreationUndoRedoKeepsTheImageEnabled",
+          "result": "Passed",
+          "duration_seconds": 0.136885
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.EditorWindowBuildsItsToolkitTreeWithoutOpeningAWindow",
+          "result": "Passed",
+          "duration_seconds": 0.09037
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.ExistingCanvasAndWorldPlacementUseTheRequestedParentAndWidth",
+          "result": "Passed",
+          "duration_seconds": 0.074262
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.NativeAlphaImportAndPlaybackPreserveCoverage",
+          "result": "Passed",
+          "duration_seconds": 0.163682
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.PackedImportDisablesDefaultAndExistingStandaloneTranscoding",
+          "result": "Passed",
+          "duration_seconds": 0.184024
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.SceneReloadPreservesTheOriginalImageReferences",
+          "result": "Passed",
+          "duration_seconds": 0.170085
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.AlphaAndDirectModesSaveReusableEffectsInOneWindow",
+          "result": "Passed",
+          "duration_seconds": 5.728674
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.ChangingSourceDropsPreviousMasksAndRejectsStaleAdd",
+          "result": "Passed",
+          "duration_seconds": 0.828418
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DragAnalyzePreviewAddAndUndoInOneWindow",
+          "result": "Passed",
+          "duration_seconds": 1.403391
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"movie.MP4\",True)",
+          "result": "Passed",
+          "duration_seconds": 0.000463
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"clip.mov\",True)",
+          "result": "Passed",
+          "duration_seconds": 6.8e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"picture.png\",False)",
+          "result": "Passed",
+          "duration_seconds": 4.2e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"script.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 3.3e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.OpaquePreviewDoesNotModifySourceAlpha",
+          "result": "Passed",
+          "duration_seconds": 0.000284
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.PackedPreviewReadsRightHalfAlphaAndPreservesBlackArtwork",
+          "result": "Passed",
+          "duration_seconds": 0.0002
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.RecommendationKeepsPotentialAlphaEvenWithUniformBorders",
+          "result": "Passed",
+          "duration_seconds": 0.000384
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.UncertainBackgroundIsNeverAutomaticallyRemoved",
+          "result": "Passed",
+          "duration_seconds": 0.000184
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchiveHashRejectsTampering",
+          "result": "Passed",
+          "duration_seconds": 0.006134
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"root/bin/ffmpeg.exe\",True)",
+          "result": "Passed",
+          "duration_seconds": 0.000813
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"../ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000616
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"root/../../ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000538
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"root\\\\..\\\\ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.00055
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"/tmp/ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000536
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"C:/ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000652
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"root/ffmpeg.exe:payload\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000509
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.CancelledExtractionDoesNotPublishExecutables",
+          "result": "Passed",
+          "duration_seconds": 0.015955
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ExecutableLookupIgnoresRelativePathEntries",
+          "result": "Passed",
+          "duration_seconds": 0.000733
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ExtractionCopiesOnlyRequiredExecutablesAndNotices",
+          "result": "Passed",
+          "duration_seconds": 0.012305
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ExtractionRejectsMissingProbeAndDuplicateExecutables",
+          "result": "Passed",
+          "duration_seconds": 0.013491
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ExtractionRejectsTraversalBeforeWritingOutsideDestination",
+          "result": "Passed",
+          "duration_seconds": 0.006189
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.AdditiveKeepsBackgroundAndBlackContributesNothing",
+          "result": "Passed",
+          "duration_seconds": 0.00362
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.AspectFitKeepsGeometry",
+          "result": "Passed",
+          "duration_seconds": 0.000481
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.KeyModesRemoveTheirBackground",
+          "result": "Passed",
+          "duration_seconds": 0.002576
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.MissingVideoIsActionable",
+          "result": "Passed",
+          "duration_seconds": 0.000295
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.NativeAlphaPreservesOpaqueBlackAndHalfAlpha",
+          "result": "Passed",
+          "duration_seconds": 0.001061
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.OpaqueIgnoresSourceAlpha",
+          "result": "Passed",
+          "duration_seconds": 0.001399
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.PackedAlphaRestoresBlackAndTransparency",
+          "result": "Passed",
+          "duration_seconds": 0.00095
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathPreservesUnicodeAndReservedCharacters",
+          "result": "Passed",
+          "duration_seconds": 0.002635
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathsCannotEscapeRoot(\"../escape.mp4\")",
+          "result": "Passed",
+          "duration_seconds": 0.000293
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathsCannotEscapeRoot(\"folder/../../escape.mp4\")",
+          "result": "Passed",
+          "duration_seconds": 5e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathsCannotEscapeRoot(\"/absolute.mp4\")",
+          "result": "Passed",
+          "duration_seconds": 4.2e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathsCannotEscapeRoot(\"C:/absolute.mp4\")",
+          "result": "Passed",
+          "duration_seconds": 6.5e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.ViewDoesNotPersistDisabledImageAndRestoresOriginalMaterial",
+          "result": "Passed",
+          "duration_seconds": 0.000831
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.FinalScrubIsNotLostOrRepeatedForever",
+          "result": "Passed",
+          "duration_seconds": 0.529272
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.PackedNativeDecoderPreservesCoverage",
+          "result": "Passed",
+          "duration_seconds": 0.020665
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.PreparePlayPauseResumeAndStop",
+          "result": "Passed",
+          "duration_seconds": 0.602289
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.StopDuringPreparationCanReplay",
+          "result": "Passed",
+          "duration_seconds": 0.017126
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.TimelineAppliesClipInAndSpeedOnceAndRestoresBinding",
+          "result": "Passed",
+          "duration_seconds": 0.060242
+        }
+      ]
+    },
+    {
+      "unity": "2022.3.62f3",
+      "pipeline": "Built-in",
+      "color_space": "linear",
+      "mode": "playmode",
+      "packages": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.timeline": "1.7.7",
+        "com.unity.test-framework": "1.1.33"
+      },
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "native_xml_sha256": "5e0e0b97df432df87fb32db00fcfa2485b2dceba2ac850014b3afcd260d02b32",
+      "started_utc": "2026-10-27 05:03:08Z",
+      "ended_utc": "2026-10-27 05:03:11Z",
+      "cases": [
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.AutoPlayUsesUnscaledTimeAndDisablingReleasesTheDecoder",
+          "result": "Passed",
+          "duration_seconds": 0.482969
+        },
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.LoopingRaisesLoopEventsWithoutCompletion",
+          "result": "Passed",
+          "duration_seconds": 1.020411
+        },
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.MultipleViewsShareTheSameDecoderTexture",
+          "result": "Passed",
+          "duration_seconds": 0.029306
+        },
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.NaturalCompletionOccursOnceAndCanHoldTheFinalFrame",
+          "result": "Passed",
+          "duration_seconds": 1.215358
+        },
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.WorldCanvasRendersVideoAndRespectsRectAndStencilMasks",
+          "result": "Passed",
+          "duration_seconds": 0.037711
+        }
+      ]
+    },
+    {
+      "unity": "6000.3.23f1",
+      "pipeline": "Built-in",
+      "color_space": "gamma",
+      "mode": "editmode",
+      "packages": {
+        "com.unity.ugui": "2.0.0",
+        "com.unity.timeline": "1.8.13",
+        "com.unity.test-framework": "1.6.0"
+      },
+      "passed": 82,
+      "failed": 0,
+      "skipped": 0,
+      "native_xml_sha256": "062de9f3e376612db1274d6f14ee8c30416c88aec1327b9c0353aa4c4fa83836",
+      "started_utc": "2026-10-27 05:01:50Z",
+      "ended_utc": "2026-10-27 05:02:07Z",
+      "cases": [
+        {
+          "name": "VideoToUnity.Tests.BackgroundBackendAuditTests.ParallelMatteMatchesSequentialAlgorithmByteForByte",
+          "result": "Passed",
+          "duration_seconds": 0.042699
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundBackendAuditTests.ToolStartFailuresNameTheToolButNotTheWorkingDirectory",
+          "result": "Passed",
+          "duration_seconds": 0.028072
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.AnalyzeThenPreviewKeepsEnclosedBlackAndRemovesOuterBackground",
+          "result": "Passed",
+          "duration_seconds": 0.970237
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.CancelledPreviewLeavesOperationIdle",
+          "result": "Passed",
+          "duration_seconds": 0.036312
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.ExistingOutputIsRejectedBeforeAnyOverwrite",
+          "result": "Passed",
+          "duration_seconds": 0.032495
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.NativeAlphaUiExportImportsAndRendersProtectedBlack",
+          "result": "Passed",
+          "duration_seconds": 1.986569
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.PackedUiExportImportsAndRendersProtectedBlack",
+          "result": "Passed",
+          "duration_seconds": 1.87918
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.WindowCreatesItsNativeToolkitTreeWithoutOpeningAWindow",
+          "result": "Passed",
+          "duration_seconds": 0.033003
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.BorderConnectionPreservesEnclosedBlackArtwork",
+          "result": "Passed",
+          "duration_seconds": 0.000484
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.CancelledFrameDoesNotStartWritingOutput",
+          "result": "Passed",
+          "duration_seconds": 0.000263
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.DetectsBorderBlackWithoutIncludingForeground",
+          "result": "Passed",
+          "duration_seconds": 0.000349
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.DetectsColoredBackgroundWithCompressionNoise",
+          "result": "Passed",
+          "duration_seconds": 0.002495
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.MixedBordersRequireExplicitManualChoice",
+          "result": "Passed",
+          "duration_seconds": 0.000295
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.ProtectedRectangleUsesTopLeftCoordinatesAndPreservesBlack",
+          "result": "Passed",
+          "duration_seconds": 0.000153
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.RejectsInvalidSettingsAndAliasedBuffers",
+          "result": "Passed",
+          "duration_seconds": 0.000337
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.SessionSnapshotsOptionsAndDoesNotModifySource",
+          "result": "Passed",
+          "duration_seconds": 0.000178
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.SoftMatteReturnsStraightColorThatRecompositesOverBlack",
+          "result": "Passed",
+          "duration_seconds": 0.000173
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.TemporalStabilizationDoesNotLeaveTrailsOnNewBackground",
+          "result": "Passed",
+          "duration_seconds": 0.000147
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.TransparentSourcePixelsRemainTransparentInsideProtection",
+          "result": "Passed",
+          "duration_seconds": 9.8e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.ChangedSettingsMarkPreviewAsStale",
+          "result": "Passed",
+          "duration_seconds": 0.00215
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.FullRegionListPreservesEveryRegionOnRejectedAdd",
+          "result": "Passed",
+          "duration_seconds": 0.303286
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.LocalValidationErrorSurvivesIdlePolling",
+          "result": "Passed",
+          "duration_seconds": 0.001908
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.ManualBlackAndGreenPresetsRetainProtectedRegions",
+          "result": "Passed",
+          "duration_seconds": 0.002411
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.NumericRegionFieldShowsClampedStoredValue",
+          "result": "Passed",
+          "duration_seconds": 1.108676
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.SourceChangeClearsColorPickerAndPreview",
+          "result": "Passed",
+          "duration_seconds": 0.005749
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.ColorPickerClampsInclusiveRightAndBottomEdges",
+          "result": "Passed",
+          "duration_seconds": 0.000706
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.ColorPickerRejectsLetterboxAndInvalidCoordinates",
+          "result": "Passed",
+          "duration_seconds": 0.000146
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.ColorPickerRejectsMalformedBuffersWithoutReading",
+          "result": "Passed",
+          "duration_seconds": 0.000149
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.ColorPickerUsesTopLeftBufferOrigin",
+          "result": "Passed",
+          "duration_seconds": 7.6e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.FullRegionListCannotAllocateAnotherRegion",
+          "result": "Passed",
+          "duration_seconds": 0.00015
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.InvalidPreviewGeometryCannotBeSampled",
+          "result": "Passed",
+          "duration_seconds": 8.7e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.PortraitPreviewSampleAccountsForHorizontalLetterbox",
+          "result": "Passed",
+          "duration_seconds": 0.000149
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.RegionNormalizationRemainsFiniteAndInsideImage",
+          "result": "Passed",
+          "duration_seconds": 0.0004
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.UnequalStagesKeepPreviewBoundsInsideTheirOwnContent",
+          "result": "Passed",
+          "duration_seconds": 0.000487
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.CreationUndoRedoKeepsTheImageEnabled",
+          "result": "Passed",
+          "duration_seconds": 0.187782
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.EditorWindowBuildsItsToolkitTreeWithoutOpeningAWindow",
+          "result": "Passed",
+          "duration_seconds": 0.102171
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.ExistingCanvasAndWorldPlacementUseTheRequestedParentAndWidth",
+          "result": "Passed",
+          "duration_seconds": 0.106849
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.NativeAlphaImportAndPlaybackPreserveCoverage",
+          "result": "Passed",
+          "duration_seconds": 0.233041
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.PackedImportDisablesDefaultAndExistingStandaloneTranscoding",
+          "result": "Passed",
+          "duration_seconds": 0.237346
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.SceneReloadPreservesTheOriginalImageReferences",
+          "result": "Passed",
+          "duration_seconds": 0.202543
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.AlphaAndDirectModesSaveReusableEffectsInOneWindow",
+          "result": "Passed",
+          "duration_seconds": 6.119552
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.ChangingSourceDropsPreviousMasksAndRejectsStaleAdd",
+          "result": "Passed",
+          "duration_seconds": 0.879502
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DragAnalyzePreviewAddAndUndoInOneWindow",
+          "result": "Passed",
+          "duration_seconds": 1.500397
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"movie.MP4\",True)",
+          "result": "Passed",
+          "duration_seconds": 0.000538
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"clip.mov\",True)",
+          "result": "Passed",
+          "duration_seconds": 6.4e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"picture.png\",False)",
+          "result": "Passed",
+          "duration_seconds": 4.1e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"script.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 3.8e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.OpaquePreviewDoesNotModifySourceAlpha",
+          "result": "Passed",
+          "duration_seconds": 0.000301
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.PackedPreviewReadsRightHalfAlphaAndPreservesBlackArtwork",
+          "result": "Passed",
+          "duration_seconds": 0.000148
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.RecommendationKeepsPotentialAlphaEvenWithUniformBorders",
+          "result": "Passed",
+          "duration_seconds": 0.000382
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.UncertainBackgroundIsNeverAutomaticallyRemoved",
+          "result": "Passed",
+          "duration_seconds": 0.00018
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchiveHashRejectsTampering",
+          "result": "Passed",
+          "duration_seconds": 0.005301
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"root/bin/ffmpeg.exe\",True)",
+          "result": "Passed",
+          "duration_seconds": 0.000936
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"../ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000603
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"root/../../ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000565
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"root\\\\..\\\\ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000471
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"/tmp/ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.00068
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"C:/ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000593
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"root/ffmpeg.exe:payload\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.004166
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.CancelledExtractionDoesNotPublishExecutables",
+          "result": "Passed",
+          "duration_seconds": 0.016586
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ExecutableLookupIgnoresRelativePathEntries",
+          "result": "Passed",
+          "duration_seconds": 0.000884
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ExtractionCopiesOnlyRequiredExecutablesAndNotices",
+          "result": "Passed",
+          "duration_seconds": 0.013453
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ExtractionRejectsMissingProbeAndDuplicateExecutables",
+          "result": "Passed",
+          "duration_seconds": 0.018731
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ExtractionRejectsTraversalBeforeWritingOutsideDestination",
+          "result": "Passed",
+          "duration_seconds": 0.005691
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.AdditiveKeepsBackgroundAndBlackContributesNothing",
+          "result": "Passed",
+          "duration_seconds": 0.004511
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.AspectFitKeepsGeometry",
+          "result": "Passed",
+          "duration_seconds": 0.00052
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.KeyModesRemoveTheirBackground",
+          "result": "Passed",
+          "duration_seconds": 0.002278
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.MissingVideoIsActionable",
+          "result": "Passed",
+          "duration_seconds": 0.000274
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.NativeAlphaPreservesOpaqueBlackAndHalfAlpha",
+          "result": "Passed",
+          "duration_seconds": 0.001093
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.OpaqueIgnoresSourceAlpha",
+          "result": "Passed",
+          "duration_seconds": 0.000787
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.PackedAlphaRestoresBlackAndTransparency",
+          "result": "Passed",
+          "duration_seconds": 0.000895
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathPreservesUnicodeAndReservedCharacters",
+          "result": "Passed",
+          "duration_seconds": 0.002604
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathsCannotEscapeRoot(\"../escape.mp4\")",
+          "result": "Passed",
+          "duration_seconds": 0.000262
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathsCannotEscapeRoot(\"folder/../../escape.mp4\")",
+          "result": "Passed",
+          "duration_seconds": 4.2e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathsCannotEscapeRoot(\"/absolute.mp4\")",
+          "result": "Passed",
+          "duration_seconds": 3e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathsCannotEscapeRoot(\"C:/absolute.mp4\")",
+          "result": "Passed",
+          "duration_seconds": 3e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.ViewDoesNotPersistDisabledImageAndRestoresOriginalMaterial",
+          "result": "Passed",
+          "duration_seconds": 0.000609
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.FinalScrubIsNotLostOrRepeatedForever",
+          "result": "Passed",
+          "duration_seconds": 0.524195
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.PackedNativeDecoderPreservesCoverage",
+          "result": "Passed",
+          "duration_seconds": 0.020654
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.PreparePlayPauseResumeAndStop",
+          "result": "Passed",
+          "duration_seconds": 0.601811
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.StopDuringPreparationCanReplay",
+          "result": "Passed",
+          "duration_seconds": 0.018262
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.TimelineAppliesClipInAndSpeedOnceAndRestoresBinding",
+          "result": "Passed",
+          "duration_seconds": 0.050286
+        }
+      ]
+    },
+    {
+      "unity": "6000.3.23f1",
+      "pipeline": "Built-in",
+      "color_space": "gamma",
+      "mode": "playmode",
+      "packages": {
+        "com.unity.ugui": "2.0.0",
+        "com.unity.timeline": "1.8.13",
+        "com.unity.test-framework": "1.6.0"
+      },
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "native_xml_sha256": "745e41343e1acc920eb6db031c26ae73a4bb988bacec2a9211a7b29c78fdca85",
+      "started_utc": "2026-10-27 05:02:15Z",
+      "ended_utc": "2026-10-27 05:02:18Z",
+      "cases": [
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.AutoPlayUsesUnscaledTimeAndDisablingReleasesTheDecoder",
+          "result": "Passed",
+          "duration_seconds": 0.488657
+        },
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.LoopingRaisesLoopEventsWithoutCompletion",
+          "result": "Passed",
+          "duration_seconds": 1.0206
+        },
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.MultipleViewsShareTheSameDecoderTexture",
+          "result": "Passed",
+          "duration_seconds": 0.031419
+        },
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.NaturalCompletionOccursOnceAndCanHoldTheFinalFrame",
+          "result": "Passed",
+          "duration_seconds": 1.217204
+        },
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.WorldCanvasRendersVideoAndRespectsRectAndStencilMasks",
+          "result": "Passed",
+          "duration_seconds": 0.043418
+        }
+      ]
+    },
+    {
+      "unity": "6000.3.23f1",
+      "pipeline": "Built-in",
+      "color_space": "linear",
+      "mode": "editmode",
+      "packages": {
+        "com.unity.ugui": "2.0.0",
+        "com.unity.timeline": "1.8.13",
+        "com.unity.test-framework": "1.6.0"
+      },
+      "passed": 82,
+      "failed": 0,
+      "skipped": 0,
+      "native_xml_sha256": "d0a00d9dd0886d6c0718a2dd155936b812d38b9929c715007444d6835b63fe20",
+      "started_utc": "2026-10-27 05:02:34Z",
+      "ended_utc": "2026-10-27 05:02:51Z",
+      "cases": [
+        {
+          "name": "VideoToUnity.Tests.BackgroundBackendAuditTests.ParallelMatteMatchesSequentialAlgorithmByteForByte",
+          "result": "Passed",
+          "duration_seconds": 0.04238
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundBackendAuditTests.ToolStartFailuresNameTheToolButNotTheWorkingDirectory",
+          "result": "Passed",
+          "duration_seconds": 0.029289
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.AnalyzeThenPreviewKeepsEnclosedBlackAndRemovesOuterBackground",
+          "result": "Passed",
+          "duration_seconds": 1.038905
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.CancelledPreviewLeavesOperationIdle",
+          "result": "Passed",
+          "duration_seconds": 0.029888
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.ExistingOutputIsRejectedBeforeAnyOverwrite",
+          "result": "Passed",
+          "duration_seconds": 0.02769
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.NativeAlphaUiExportImportsAndRendersProtectedBlack",
+          "result": "Passed",
+          "duration_seconds": 2.001034
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.PackedUiExportImportsAndRendersProtectedBlack",
+          "result": "Passed",
+          "duration_seconds": 1.871777
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundEditorTests.WindowCreatesItsNativeToolkitTreeWithoutOpeningAWindow",
+          "result": "Passed",
+          "duration_seconds": 0.033208
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.BorderConnectionPreservesEnclosedBlackArtwork",
+          "result": "Passed",
+          "duration_seconds": 0.000508
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.CancelledFrameDoesNotStartWritingOutput",
+          "result": "Passed",
+          "duration_seconds": 0.000265
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.DetectsBorderBlackWithoutIncludingForeground",
+          "result": "Passed",
+          "duration_seconds": 0.000364
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.DetectsColoredBackgroundWithCompressionNoise",
+          "result": "Passed",
+          "duration_seconds": 0.000486
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.MixedBordersRequireExplicitManualChoice",
+          "result": "Passed",
+          "duration_seconds": 0.000409
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.ProtectedRectangleUsesTopLeftCoordinatesAndPreservesBlack",
+          "result": "Passed",
+          "duration_seconds": 0.000209
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.RejectsInvalidSettingsAndAliasedBuffers",
+          "result": "Passed",
+          "duration_seconds": 0.000664
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.SessionSnapshotsOptionsAndDoesNotModifySource",
+          "result": "Passed",
+          "duration_seconds": 0.000329
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.SoftMatteReturnsStraightColorThatRecompositesOverBlack",
+          "result": "Passed",
+          "duration_seconds": 0.000328
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.TemporalStabilizationDoesNotLeaveTrailsOnNewBackground",
+          "result": "Passed",
+          "duration_seconds": 0.000245
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundMatteTests.TransparentSourcePixelsRemainTransparentInsideProtection",
+          "result": "Passed",
+          "duration_seconds": 0.000122
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.ChangedSettingsMarkPreviewAsStale",
+          "result": "Passed",
+          "duration_seconds": 0.002856
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.FullRegionListPreservesEveryRegionOnRejectedAdd",
+          "result": "Passed",
+          "duration_seconds": 0.277733
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.LocalValidationErrorSurvivesIdlePolling",
+          "result": "Passed",
+          "duration_seconds": 0.00158
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.ManualBlackAndGreenPresetsRetainProtectedRegions",
+          "result": "Passed",
+          "duration_seconds": 0.001752
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.NumericRegionFieldShowsClampedStoredValue",
+          "result": "Passed",
+          "duration_seconds": 0.981853
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityAuditTests.SourceChangeClearsColorPickerAndPreview",
+          "result": "Passed",
+          "duration_seconds": 0.001874
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.ColorPickerClampsInclusiveRightAndBottomEdges",
+          "result": "Passed",
+          "duration_seconds": 0.000614
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.ColorPickerRejectsLetterboxAndInvalidCoordinates",
+          "result": "Passed",
+          "duration_seconds": 0.000143
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.ColorPickerRejectsMalformedBuffersWithoutReading",
+          "result": "Passed",
+          "duration_seconds": 0.000143
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.ColorPickerUsesTopLeftBufferOrigin",
+          "result": "Passed",
+          "duration_seconds": 7.8e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.FullRegionListCannotAllocateAnotherRegion",
+          "result": "Passed",
+          "duration_seconds": 0.00016
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.InvalidPreviewGeometryCannotBeSampled",
+          "result": "Passed",
+          "duration_seconds": 8.5e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.PortraitPreviewSampleAccountsForHorizontalLetterbox",
+          "result": "Passed",
+          "duration_seconds": 0.000159
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.RegionNormalizationRemainsFiniteAndInsideImage",
+          "result": "Passed",
+          "duration_seconds": 0.000301
+        },
+        {
+          "name": "VideoToUnity.Tests.BackgroundUsabilityGeometryTests.UnequalStagesKeepPreviewBoundsInsideTheirOwnContent",
+          "result": "Passed",
+          "duration_seconds": 0.000451
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.CreationUndoRedoKeepsTheImageEnabled",
+          "result": "Passed",
+          "duration_seconds": 0.177831
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.EditorWindowBuildsItsToolkitTreeWithoutOpeningAWindow",
+          "result": "Passed",
+          "duration_seconds": 0.105915
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.ExistingCanvasAndWorldPlacementUseTheRequestedParentAndWidth",
+          "result": "Passed",
+          "duration_seconds": 0.102742
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.NativeAlphaImportAndPlaybackPreserveCoverage",
+          "result": "Passed",
+          "duration_seconds": 0.22306
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.PackedImportDisablesDefaultAndExistingStandaloneTranscoding",
+          "result": "Passed",
+          "duration_seconds": 0.24419
+        },
+        {
+          "name": "VideoToUnity.Tests.EditorIntegrationTests.SceneReloadPreservesTheOriginalImageReferences",
+          "result": "Passed",
+          "duration_seconds": 0.227488
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.AlphaAndDirectModesSaveReusableEffectsInOneWindow",
+          "result": "Passed",
+          "duration_seconds": 6.299551
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.ChangingSourceDropsPreviousMasksAndRejectsStaleAdd",
+          "result": "Passed",
+          "duration_seconds": 0.784633
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DragAnalyzePreviewAddAndUndoInOneWindow",
+          "result": "Passed",
+          "duration_seconds": 1.47606
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"movie.MP4\",True)",
+          "result": "Passed",
+          "duration_seconds": 0.000432
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"clip.mov\",True)",
+          "result": "Passed",
+          "duration_seconds": 4.2e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"picture.png\",False)",
+          "result": "Passed",
+          "duration_seconds": 3e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"script.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 2.4e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.OpaquePreviewDoesNotModifySourceAlpha",
+          "result": "Passed",
+          "duration_seconds": 0.000303
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.PackedPreviewReadsRightHalfAlphaAndPreservesBlackArtwork",
+          "result": "Passed",
+          "duration_seconds": 0.000156
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.RecommendationKeepsPotentialAlphaEvenWithUniformBorders",
+          "result": "Passed",
+          "duration_seconds": 0.000189
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.UncertainBackgroundIsNeverAutomaticallyRemoved",
+          "result": "Passed",
+          "duration_seconds": 0.000115
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchiveHashRejectsTampering",
+          "result": "Passed",
+          "duration_seconds": 0.005499
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"root/bin/ffmpeg.exe\",True)",
+          "result": "Passed",
+          "duration_seconds": 0.000862
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"../ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000525
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"root/../../ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000479
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"root\\\\..\\\\ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000601
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"/tmp/ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000515
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"C:/ffmpeg.exe\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000527
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ArchivePathsCannotEscapeOrUseAlternateStreams(\"root/ffmpeg.exe:payload\",False)",
+          "result": "Passed",
+          "duration_seconds": 0.000464
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.CancelledExtractionDoesNotPublishExecutables",
+          "result": "Passed",
+          "duration_seconds": 0.020052
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ExecutableLookupIgnoresRelativePathEntries",
+          "result": "Passed",
+          "duration_seconds": 0.000858
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ExtractionCopiesOnlyRequiredExecutablesAndNotices",
+          "result": "Passed",
+          "duration_seconds": 0.01391
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ExtractionRejectsMissingProbeAndDuplicateExecutables",
+          "result": "Passed",
+          "duration_seconds": 0.015503
+        },
+        {
+          "name": "VideoToUnity.Tests.ToolchainSetupTests.ExtractionRejectsTraversalBeforeWritingOutsideDestination",
+          "result": "Passed",
+          "duration_seconds": 0.005774
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.AdditiveKeepsBackgroundAndBlackContributesNothing",
+          "result": "Passed",
+          "duration_seconds": 0.00366
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.AspectFitKeepsGeometry",
+          "result": "Passed",
+          "duration_seconds": 0.000396
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.KeyModesRemoveTheirBackground",
+          "result": "Passed",
+          "duration_seconds": 0.001445
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.MissingVideoIsActionable",
+          "result": "Passed",
+          "duration_seconds": 0.000266
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.NativeAlphaPreservesOpaqueBlackAndHalfAlpha",
+          "result": "Passed",
+          "duration_seconds": 0.001209
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.OpaqueIgnoresSourceAlpha",
+          "result": "Passed",
+          "duration_seconds": 0.000806
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.PackedAlphaRestoresBlackAndTransparency",
+          "result": "Passed",
+          "duration_seconds": 0.000945
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathPreservesUnicodeAndReservedCharacters",
+          "result": "Passed",
+          "duration_seconds": 0.002194
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathsCannotEscapeRoot(\"../escape.mp4\")",
+          "result": "Passed",
+          "duration_seconds": 0.000245
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathsCannotEscapeRoot(\"folder/../../escape.mp4\")",
+          "result": "Passed",
+          "duration_seconds": 3.9e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathsCannotEscapeRoot(\"/absolute.mp4\")",
+          "result": "Passed",
+          "duration_seconds": 2.9e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.StreamingPathsCannotEscapeRoot(\"C:/absolute.mp4\")",
+          "result": "Passed",
+          "duration_seconds": 2.7e-05
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoEffectTests.ViewDoesNotPersistDisabledImageAndRestoresOriginalMaterial",
+          "result": "Passed",
+          "duration_seconds": 0.000569
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.FinalScrubIsNotLostOrRepeatedForever",
+          "result": "Passed",
+          "duration_seconds": 0.539583
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.PackedNativeDecoderPreservesCoverage",
+          "result": "Passed",
+          "duration_seconds": 0.018887
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.PreparePlayPauseResumeAndStop",
+          "result": "Passed",
+          "duration_seconds": 0.600416
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.StopDuringPreparationCanReplay",
+          "result": "Passed",
+          "duration_seconds": 0.030742
+        },
+        {
+          "name": "VideoToUnity.Tests.VideoPlaybackTests.TimelineAppliesClipInAndSpeedOnceAndRestoresBinding",
+          "result": "Passed",
+          "duration_seconds": 0.060649
+        }
+      ]
+    },
+    {
+      "unity": "6000.3.23f1",
+      "pipeline": "Built-in",
+      "color_space": "linear",
+      "mode": "playmode",
+      "packages": {
+        "com.unity.ugui": "2.0.0",
+        "com.unity.timeline": "1.8.13",
+        "com.unity.test-framework": "1.6.0"
+      },
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "native_xml_sha256": "e01f68d59cc3e473db57d7460caa6e63cfb7af76148e9db1795ae5f9de7c0e7a",
+      "started_utc": "2026-10-27 05:03:00Z",
+      "ended_utc": "2026-10-27 05:03:02Z",
+      "cases": [
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.AutoPlayUsesUnscaledTimeAndDisablingReleasesTheDecoder",
+          "result": "Passed",
+          "duration_seconds": 0.49183
+        },
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.LoopingRaisesLoopEventsWithoutCompletion",
+          "result": "Passed",
+          "duration_seconds": 1.021834
+        },
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.MultipleViewsShareTheSameDecoderTexture",
+          "result": "Passed",
+          "duration_seconds": 0.033124
+        },
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.NaturalCompletionOccursOnceAndCanHoldTheFinalFrame",
+          "result": "Passed",
+          "duration_seconds": 1.216835
+        },
+        {
+          "name": "VideoToUnity.Tests.RuntimePlaybackTests.WorldCanvasRendersVideoAndRespectsRectAndStencilMasks",
+          "result": "Passed",
+          "duration_seconds": 0.039258
+        }
+      ]
+    }
+  ],
+  "source_sha256_text_normalized_lf": {
+    "Editor/VideoToUnity.Editor.asmdef": "9a64493663a9390b432c24be0eaac0133f4cec4c8cf8a6b4b16d6bacba3b02f6",
+    "Editor/Background/BackgroundContracts.cs": "36812a7d597a8b21d29a18a106dd1fb4d54db006483144929864116cba1e7549",
+    "Editor/Background/BackgroundFrameHash.cs": "1558b8ef0f0a9ac696666860f087e32b23090f65cca8135c73cb49b33fe90ecc",
+    "Editor/Background/BackgroundMatte.cs": "723cbd4dc5ac6a4a3bd18006192bfc016f42f3f792955f17d4e3c2b11d1f0aec",
+    "Editor/Background/BackgroundProcess.cs": "4438ed0c72e108a64ec43e61faf4bf8be450374c843a312570e141e733e13435",
+    "Editor/Background/BackgroundProcessSource.cs": "8eb9e3e2a628cf189906394317efcb405fd6a47f736f91aee43ae22ded30cee0",
+    "Editor/Background/BackgroundVideoProcessor.cs": "30ee062c31fa4267dee465c9edd84cef17a0423007a25e1734226f48454fff7b",
+    "Editor/BackgroundUI/BackgroundRemovalOperation.cs": "d9d8f581fb2485dd3d8dd47e11feb0d50ef06dc01515482aa5777fbc35772f8f",
+    "Editor/BackgroundUI/BackgroundRemovalUiModel.cs": "ff7b4c8cc26a722e29c8644ac3e1b653334cf2485abd70b4238e4f29b9e34133",
+    "Editor/BackgroundUI/BackgroundRemovalWindow.cs": "5afe253c21568a22cc85b9ba3223b02712fbef91b3cbe813b764fd64b9c3bac5",
+    "Editor/BackgroundUI/BackgroundRemovalWindow.Quick.cs": "41d9caab6f69a3cc139bb54e8e7c08b03441158f503c9d4b339fc8fd23d8c284",
+    "Editor/BackgroundUI/BackgroundRemovalWindow.uss": "062bf03c628095deb23743b44aaa033c1446a1c83b73d3d2f7bf14a83854b16e",
+    "Editor/BackgroundUI/QuickVideoProbe.cs": "24e7447da6ebf4cd5a2da3f2e3b243e72c20db798e42dfeb43a154788a936c43",
+    "Editor/BackgroundUI/QuickWorkflow.uss": "b39da300777c5079dc79f5639d91cfaa8d923d8cbe74690c4ba7feb0fbaae131",
+    "Editor/BackgroundUI/QuickWorkflowPolicy.cs": "11ab8cbc4feb648510d0980a30349fa21fac25441ef1f23cc8aa5a88ff98111d",
+    "Editor/Conversion/VideoConverter.cs": "8d3b0cf4058b7a6a3b34fb277059a3b2d70c095406db22acd304c4d1b2532d37",
+    "Editor/Setup/VideoToolchainSetup.cs": "103f6d8f376eb86febfdeb19b5f850ffcb809ae89728754a98a7fd1ff3f8295c",
+    "Editor/UI/VideoEffectAssetInspector.cs": "095d0853e168e28e6eb870c7f1614967da8c4b5a924af847d1f866bd10ca5544",
+    "Editor/UI/VideoEffectConversionOperation.cs": "c531965d2302abb7b261f477b72d7492e299c387b846678911f246f00ea1edb5",
+    "Editor/UI/VideoEffectEditorPaths.cs": "b13272be26987331c39e7330de1ed793524e7e526c6118ede922f47d584107e6",
+    "Editor/UI/VideoEffectFileTransfer.cs": "17e07151c11d3f50b3bcb0d69c5f8ff590c549c60cc68ad60f41a5b0e1a3dafb",
+    "Editor/UI/VideoEffectImportSettings.cs": "e9a02ebe7b5b8e2a823462ad1d8bf3b8563c9ab99d8b0db96aca36eaaaa9cdb9",
+    "Editor/UI/VideoEffectObjectFactory.cs": "694f5eada8d19b87f98f3fd01a64a7b6ef168944bdd041c78a4ea4f3c7b45fc4",
+    "Editor/UI/VideoEffectWindow.cs": "9b657ef751ec1c126a64abe789086b773be25d5bd2a326fe52fdc0d4eec096f3",
+    "Editor/UI/VideoEffectWindow.uss": "967483a68a84079fbb33dad22bb76f738ada497f4a64a8932585077ffb64ea1d",
+    "Runtime/VideoEffectAsset.cs": "a58be070249d65ee826679f8e373a10dd83308fcfe0363cbdf3c24def381d8bc",
+    "Runtime/VideoEffectPlayer.cs": "670b24b47a0f8edf4528615e315b062eca5138e20e615174ff8741e2e59598b8",
+    "Runtime/VideoEffectView.cs": "3f00a60b269b2ebe5afc14382a24c261df8bb1e6c223dce3224ddb917d3f7ef1",
+    "Runtime/VideoToUnity.Runtime.asmdef": "18f5d6e9bb63505747b0dd912e7a222b3f86f92b491203235f360cd5cbf09a97",
+    "Runtime/Resources/VideoToUnity/VideoComposite.shader": "5e6d7eb21fa677222c91729ced5e553c2e1b3c5619c1b5d20484aa39fec5e873",
+    "Samples~/BackgroundRemoval/flat-black.mp4": "d0882aa9f93fcd79d46f7d18ec21e0b2cd858663c9b4109e5438a8d196f805b9",
+    "Samples~/BackgroundRemoval/flat-green.mp4": "10441bf6609a6b125fa7ae180ccab773e38ee1074a43c93968bcfcc081ef7d8c",
+    "Samples~/Basic/PlayVideoEffect.cs": "c8d1fcf6d96c3aad28acde1f267598aae3c66bbfbb0bff1f98ea80035057325b",
+    "Samples~/Basic/Media/black-background.mp4": "6dcaf31dbe19294e4c24c0f1735d48e5db61fc0ad49e6a836d9b00dc6e02133a",
+    "Samples~/Basic/Media/native-alpha.webm": "51d5fae7d56d2dd02f76e049751bd1590fa040aa91a1fa76518307afec62a7f0",
+    "Samples~/Basic/Media/packed-alpha.mp4": "548c364e4b1db1a2244a26c973886097e0ff7e0330ca872f04bd8d7b60695ca3",
+    "Samples~/Basic/Source~/source-alpha.mov": "f0a887fa59082dfba2f562bbd2211426559f79d2250543719164b07a0b7a88df",
+    "Tests/Editor/BackgroundBackendAuditTests.cs": "3615a39a2a3aeaa6a112ac60ac5862aaabd38260b75151337b58afd0f7d6358a",
+    "Tests/Editor/BackgroundEditorTests.cs": "c9a3b47bd61b832ae9a32422fac5c45db3ff2df8e51e864fd5bb27f71db4ef95",
+    "Tests/Editor/BackgroundMatteTests.cs": "82bd4e3e273164c430ced47a8c78f0fe0ba49b6457b541e1a943af95ce90a494",
+    "Tests/Editor/BackgroundUsabilityAuditTests.cs": "5e9d77deef3beafc0f9985f7e91ce14b870351cb58137d2b6e1069d8ce3739fc",
+    "Tests/Editor/EditorIntegrationTests.cs": "31b3ebc347e33ee901c6478d414eaa408e46b89c84bd013ccb50b23d2901c296",
+    "Tests/Editor/QuickWorkflowTests.cs": "87eda63cf21b132936351fca6850cdfee34e8da2d7dd2e6c3a6fde59d4b4bc55",
+    "Tests/Editor/ToolchainSetupTests.cs": "e228f9212bcd2e97ddff0f6005daefa5c3542f8d907d831bdbf80888baf5cb0f",
+    "Tests/Editor/VideoEffectTests.cs": "5cffeb4b9a53c444f3b376bfdb8f9f9c65fe45420a9be923df1106ac507749da",
+    "Tests/Editor/VideoPlaybackTests.cs": "efd7bb3cd0da48ed8eec5dba303876abe30ba7d89cb2f09577f442c23e19323e",
+    "Tests/Editor/VideoToUnity.Tests.asmdef": "afea1790f19f50d9b8d763a1a7ca510b971933298dd64eff1da307ef5ef33ea2",
+    "Tests/PlayMode/RuntimePlaybackTests.cs": "513db5e50cf85496928e488fabd11848803b59a15d08901f1cca11f355961a3d",
+    "Tests/PlayMode/VideoToUnity.PlayMode.Tests.asmdef": "28c0a30f71ba09980867da890950bc48b88058e6943c7628e5bb6f681b18781a",
+    "Timeline/AssemblyInfo.cs": "15a550d6da4b47347563aa188dfd2a41e44e1fc7fc5b32e57131dbf4fd9252ea",
+    "Timeline/VideoEffectBehaviour.cs": "b865b5cc45171842fc8c0e09577cde891ccb9fb7a4809bb2c012fe62511ec81d",
+    "Timeline/VideoEffectClip.cs": "273a0ca3bce8a14d985134063fa687218eb0bba65f48d2735be766d0042a5f2f",
+    "Timeline/VideoEffectMixerBehaviour.cs": "5f0cd598fd2a10bb7831079164d6ddf3a99895acc55618bf6569a0c4e91e4863",
+    "Timeline/VideoEffectTrack.cs": "3fae5330da54d908ab0d89016210c9ec5026cdf6717a45a747496165597d060d",
+    "Timeline/VideoToUnity.Timeline.asmdef": "d79a1971e98b8b064552be7bfd3c7607d74b52badfed2cf91cfd4af67f02fec2",
+    "Timeline/Editor/VideoEffectClipEditor.cs": "49ce37141129450922c47fceb5b817d06a8b9ef6cd4023db5c95af2607054514",
+    "Timeline/Editor/VideoEffectPreviewPump.cs": "2883f27506cd83148b3168a8581cb1b0c2340c83de9ec3353d5e742dbf8b9264",
+    "Timeline/Editor/VideoToUnity.Timeline.Editor.asmdef": "ef3b55bfd7d898e10fcaf05f129f6ea881256fc3a1b1065f588bbbdfb96222ff"
+  }
+}

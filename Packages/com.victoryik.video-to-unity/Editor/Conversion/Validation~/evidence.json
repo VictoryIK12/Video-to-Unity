@@ -1,0 +1,1342 @@
+{
+  "date": "2026-10-27",
+  "followup_base": "ec9e56d1f9b03a04442e754de4892a5201689888",
+  "passed_cases": 43,
+  "portable_self_generated_cases": 41,
+  "main_readonly_sample_cases": 2,
+  "native_unity_tested": false,
+  "ffmpeg": "N-126374-g089a48eb36-20260831",
+  "threading": "decoder, filter and x264 threads chosen by FFmpeg; libvpx up to 8; tools run below normal priority",
+  "result": [
+    {
+      "case": "색상 & 알파 (원본) ; $ 시험.mov:packed:run:",
+      "expected_failure": null,
+      "output": "PASS PackedH264 96x64 frames=12 alpha=0..255 556ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt709",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "bt709"
+      },
+      "rgb_max_error": 0,
+      "rgb_mean_error": 0.0,
+      "source_sha256": "43e26e4079fb793432cfd611ce6e1c8b41b23316d1b2366bc078b8ed5b420b30",
+      "output_sha256": "a8b1df7d427d7feb6277b0085d49a66c382ab5f5e5e11226d895b4527fc51189",
+      "alpha_max_error": 3,
+      "alpha_mean_error": 0.5474039713541666,
+      "decoded_frames": 12
+    },
+    {
+      "case": "색상 & 알파 (원본) ; $ 시험.mov:webm:run:",
+      "expected_failure": null,
+      "output": "PASS AlphaWebM 96x64 frames=12 alpha=0..255 413ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt470bg",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "bt709"
+      },
+      "rgb_max_error": 5,
+      "rgb_mean_error": 0.5869140625,
+      "source_sha256": "43e26e4079fb793432cfd611ce6e1c8b41b23316d1b2366bc078b8ed5b420b30",
+      "output_sha256": "2ebbe20addf184f4c5c82d1d54642b5ab045a3b9c6569db06ee997965fa7dcba",
+      "alpha_max_error": 5,
+      "alpha_mean_error": 0.5629204644097222,
+      "decoded_frames": 12
+    },
+    {
+      "case": "직접 생성한 VP8 alpha.webm:packed:run:",
+      "expected_failure": null,
+      "output": "PASS PackedH264 96x64 frames=12 alpha=0..255 512ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt709",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "bt709"
+      },
+      "rgb_max_error": 3,
+      "rgb_mean_error": 0.011791087962962963,
+      "source_sha256": "03856def59e734a9467e1e4b955aad94c7498150edc9b260ebcd34087c3d10a7",
+      "output_sha256": "881fa40d63296f26d845eeaa0d13187e3ab22439eb6bf7a60e33271d708b6d64",
+      "alpha_max_error": 3,
+      "alpha_mean_error": 0.4718288845486111,
+      "decoded_frames": 12
+    },
+    {
+      "case": "직접 생성한 VP8 alpha.webm:webm:run:",
+      "expected_failure": null,
+      "output": "PASS AlphaWebM 96x64 frames=12 alpha=0..255 403ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt470bg",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "bt709"
+      },
+      "rgb_max_error": 0,
+      "rgb_mean_error": 0.0,
+      "source_sha256": "03856def59e734a9467e1e4b955aad94c7498150edc9b260ebcd34087c3d10a7",
+      "output_sha256": "0792cd6a7c86d4848d3a454c59cdbe1cc7bd0edfdebae37912acc12b5cf52547",
+      "alpha_max_error": 4,
+      "alpha_mean_error": 0.18675401475694445,
+      "decoded_frames": 12
+    },
+    {
+      "case": "opaque-with-alpha-channel.mov:packed:run:",
+      "expected_failure": "opaque",
+      "output": "System.InvalidOperationException: Video conversion failed: Source is opaque at 8-bit precision. Select a video with real, representable alpha pixels.\r\n ---> System.IO.InvalidDataException: Source is opaque at 8-bit precision. Select a video with real, representable alpha pixels.\r\n   at VideoToUnity.Editor.VideoConverter.Convert() in <path> 117\r\n   --- End of inner exception stack trace ---\r\n   at VideoToUnity.Editor.VideoConverter.Convert() in <path> 166\r\n   at VideoToUnity.Editor.VideoConverter.<ConvertAsync>b__25_0() in <path> 73\r\n   at System.Threading.Tasks.Task`1.InnerInvoke()\r\n   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)\r\n--- End of stack trace from previous location ---\r\n   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)\r\n   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)\r\n--- End of stack trace from previous location ---\r\n   at VideoToUnity.Editor.VideoConverter.ConvertAsync() in <path> 73\r\n   at Harness.Main(String[] args) in <path>"
+    },
+    {
+      "case": "opaque-no-alpha.mp4:packed:run:",
+      "expected_failure": "failed",
+      "output": "System.InvalidOperationException: Video conversion failed: ffmpeg.EXE failed (exit -22): [Parsed_alphaextract_0 @ 000002410897bcc0] Requested planes not available.\r\n[Parsed_alphaextract_0 @ 000002410897bcc0] Failed to configure input pad on Parsed_alphaextract_0\r\n[vf#0:0 @ 0000024106e2a740] Error reinitializing filters!\r\n[vf#0:0 @ 0000024106e2a740] Task finished with error: Invalid argument\r\n[vf#0:0 @ 0000024106e2a740] Terminating thread with error: Invalid argument\r\n[vost#0:0/rawvideo @ 0000024106e2a500] [enc:rawvideo @ 0000024106dc9480] Could not open encoder before EOF\r\n[vost#0:0/rawvideo @ 0000024106e2a500] Task finished with error: Invalid argument\r\n[vost#0:0/rawvideo @ 0000024106e2a500] Terminating thread with error: Invalid argument\r\n[out#0/rawvideo @ 0000024106de5380] Nothing was written into output file, because at least one of its streams received no packets.\r\n ---> System.IO.IOException: ffmpeg.EXE failed (exit -22): [Parsed_alphaextract_0 @ 000002410897bcc0] Requested planes not available.\r\n[Parsed_alphaextract_0 @ 000002410897bcc0] Failed to configure input pad on Parsed_alphaextract_0\r\n[vf#0:0 @ 0000024106e2a740] Error reinitializing filters!\r\n[vf#0:0 @ 0000024106e2a740] Task finished with error: Invalid argument\r\n[vf#0:0 @ 0000024106e2a740] Terminating thread with error: Invalid argument\r\n[vost#0:0/rawvideo @ 0000024106e2a500] [enc:rawvideo @ 0000024106dc9480] Could not open encoder before EOF\r\n[vost#0:0/rawvideo @ 0000024106e2a500] Task finished with error: Invalid argument\r\n[vost#0:0/rawvideo @ 0000024106e2a500] Terminating thread with error: Invalid argument\r\n[out#0/rawvideo @ 0000024106de5380] Nothing was written into output file, because at least one of its streams received no packets.\r\n   at VideoToUnity.Editor.VideoConverter.Run(String executable, IEnumerable`1 arguments, Action`1 consume) in <path>"
+    },
+    {
+      "case": "odd-geometry.mov:packed:run:",
+      "expected_failure": "even source",
+      "output": "System.InvalidOperationException: Video conversion failed: An even source width and height are required for 4:2:0 output. Export even dimensions; no pixels are resized or cropped.\r\n ---> System.IO.InvalidDataException: An even source width and height are required for 4:2:0 output. Export even dimensions; no pixels are resized or cropped.\r\n   at VideoToUnity.Editor.VideoConverter.ValidateGeometry(Video video) in <path> 177\r\n   at VideoToUnity.Editor.VideoConverter.Convert() in <path> 105\r\n   --- End of inner exception stack trace ---\r\n   at VideoToUnity.Editor.VideoConverter.Convert() in <path> 166\r\n   at VideoToUnity.Editor.VideoConverter.<ConvertAsync>b__25_0() in <path> 73\r\n   at System.Threading.Tasks.Task`1.InnerInvoke()\r\n   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)\r\n--- End of stack trace from previous location ---\r\n   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)\r\n   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)\r\n--- End of stack trace from previous location ---\r\n   at VideoToUnity.Editor.VideoConverter.ConvertAsync() in <path>"
+    },
+    {
+      "case": "색상 & 알파 (원본) ; $ 시험.mov:packed:cancel:",
+      "expected_failure": null,
+      "output": "CANCELLED 1ms; Video conversion cancelled.\r\n"
+    },
+    {
+      "case": "variable-framerate.mov:packed:run:",
+      "expected_failure": null,
+      "output": "PASS PackedH264 96x64 frames=12 alpha=0..255 599ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt709",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "bt709"
+      },
+      "rgb_max_error": 0,
+      "rgb_mean_error": 0.0,
+      "source_sha256": "eab9955fd874141db6b3471dd1a79f8ae6ac9ca7bfe0bad38dab9981eebf1e9d",
+      "output_sha256": "1c4b738c7956ec7a7c910306492aabb56675e041acf872e059c77e5c289a794a"
+    },
+    {
+      "case": "variable-framerate.mov:webm:run:",
+      "expected_failure": null,
+      "output": "PASS AlphaWebM 96x64 frames=12 alpha=0..255 439ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt470bg",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "bt709"
+      },
+      "rgb_max_error": 5,
+      "rgb_mean_error": 0.5869140625,
+      "source_sha256": "eab9955fd874141db6b3471dd1a79f8ae6ac9ca7bfe0bad38dab9981eebf1e9d",
+      "output_sha256": "8d1b1a2e61ba88b1707a000d25ec1ba9145c9b56d20b6f5fb30a8c7c5c641242"
+    },
+    {
+      "case": "one-frame.mov:packed:run:",
+      "expected_failure": null,
+      "output": "PASS PackedH264 96x64 frames=1 alpha=0..255 504ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt709",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "bt709"
+      },
+      "rgb_max_error": 0,
+      "rgb_mean_error": 0.0,
+      "source_sha256": "45909d2bf849f834956ebb101341c11df8fe38915e0ebdd3b19a6e075da974d6",
+      "output_sha256": "8b76685cc75952b59f4f2d53a6ad70b0141f37cc0844141549f9799996808734"
+    },
+    {
+      "case": "one-frame.mov:webm:run:",
+      "expected_failure": null,
+      "output": "PASS AlphaWebM 96x64 frames=1 alpha=0..255 409ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt470bg",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "bt709"
+      },
+      "rgb_max_error": 5,
+      "rgb_mean_error": 0.5869140625,
+      "source_sha256": "45909d2bf849f834956ebb101341c11df8fe38915e0ebdd3b19a6e075da974d6",
+      "output_sha256": "fa870c39ee7eb41f0c33321dfc859f9f0a660134c3b61109e53f449751b1b696"
+    },
+    {
+      "case": "nonzero-video-start.mov:packed:run:",
+      "expected_failure": null,
+      "output": "PASS PackedH264 96x64 frames=12 alpha=0..255 569ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt709",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "bt709"
+      },
+      "rgb_max_error": 0,
+      "rgb_mean_error": 0.0,
+      "source_sha256": "4cbf0f9a63349bb6a270c73431392e08f58fffd1320277e7577c47e3baa7e3f8",
+      "output_sha256": "a8b1df7d427d7feb6277b0085d49a66c382ab5f5e5e11226d895b4527fc51189"
+    },
+    {
+      "case": "audio-first-video-second.mov:packed:run:",
+      "expected_failure": null,
+      "output": "PASS PackedH264 96x64 frames=12 alpha=0..255 543ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt709",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "bt709"
+      },
+      "rgb_max_error": 0,
+      "rgb_mean_error": 0.0,
+      "source_sha256": "e01c174d0c942028a85e472488c491fdf5a6122780f5831a0220918de8a23692",
+      "output_sha256": "a8b1df7d427d7feb6277b0085d49a66c382ab5f5e5e11226d895b4527fc51189"
+    },
+    {
+      "case": "색상 & 알파 (원본) ; $ 시험.mov:packed:parallel:",
+      "expected_failure": null,
+      "output": "PASS concurrent jobs with unique outputs\r\n"
+    },
+    {
+      "case": "metadata-only-alpha.webm:packed:run:",
+      "expected_failure": "failed",
+      "output": "System.InvalidOperationException: Video conversion failed: ffmpeg.EXE failed (exit -22): [Parsed_alphaextract_0 @ 000001dc30719e00] Requested planes not available.\r\n[Parsed_alphaextract_0 @ 000001dc30719e00] Failed to configure input pad on Parsed_alphaextract_0\r\n[vf#0:0 @ 000001dc2e894e80] Error reinitializing filters!\r\n[vf#0:0 @ 000001dc2e894e80] Task finished with error: Invalid argument\r\n[vf#0:0 @ 000001dc2e894e80] Terminating thread with error: Invalid argument\r\n[vost#0:0/rawvideo @ 000001dc2e890940] [enc:rawvideo @ 000001dc2e8290c0] Could not open encoder before EOF\r\n[vost#0:0/rawvideo @ 000001dc2e890940] Task finished with error: Invalid argument\r\n[vost#0:0/rawvideo @ 000001dc2e890940] Terminating thread with error: Invalid argument\r\n[out#0/rawvideo @ 000001dc2e842500] Nothing was written into output file, because at least one of its streams received no packets.\r\n ---> System.IO.IOException: ffmpeg.EXE failed (exit -22): [Parsed_alphaextract_0 @ 000001dc30719e00] Requested planes not available.\r\n[Parsed_alphaextract_0 @ 000001dc30719e00] Failed to configure input pad on Parsed_alphaextract_0\r\n[vf#0:0 @ 000001dc2e894e80] Error reinitializing filters!\r\n[vf#0:0 @ 000001dc2e894e80] Task finished with error: Invalid argument\r\n[vf#0:0 @ 000001dc2e894e80] Terminating thread with error: Invalid argument\r\n[vost#0:0/rawvideo @ 000001dc2e890940] [enc:rawvideo @ 000001dc2e8290c0] Could not open encoder before EOF\r\n[vost#0:0/rawvideo @ 000001dc2e890940] Task finished with error: Invalid argument\r\n[vost#0:0/rawvideo @ 000001dc2e890940] Terminating thread with error: Invalid argument\r\n[out#0/rawvideo @ 000001dc2e842500] Nothing was written into output file, because at least one of its streams received no packets.\r\n   at VideoToUnity.Editor.VideoConverter.Run(String executable, IEnumerable`1 arguments, Action`1 consume) in <path>"
+    },
+    {
+      "case": "rotated.mov:packed:run:",
+      "expected_failure": "Rotation/display-transform",
+      "output": "System.InvalidOperationException: Video conversion failed: Rotation/display-transform metadata is unsupported. Bake the transform into the source pixels before conversion.\r\n ---> System.IO.InvalidDataException: Rotation/display-transform metadata is unsupported. Bake the transform into the source pixels before conversion.\r\n   at VideoToUnity.Editor.VideoConverter.ValidateGeometry(Video video) in <path> 181\r\n   at VideoToUnity.Editor.VideoConverter.Convert() in <path> 105\r\n   --- End of inner exception stack trace ---\r\n   at VideoToUnity.Editor.VideoConverter.Convert() in <path> 166\r\n   at VideoToUnity.Editor.VideoConverter.<ConvertAsync>b__25_0() in <path> 73\r\n   at System.Threading.Tasks.Task`1.InnerInvoke()\r\n   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)\r\n--- End of stack trace from previous location ---\r\n   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)\r\n   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)\r\n--- End of stack trace from previous location ---\r\n   at VideoToUnity.Editor.VideoConverter.ConvertAsync() in <path>"
+    },
+    {
+      "case": "non-square-pixels.mov:packed:run:",
+      "expected_failure": "Non-square",
+      "output": "System.InvalidOperationException: Video conversion failed: Non-square source pixels are unsupported. Export square pixels to preserve display geometry.\r\n ---> System.IO.InvalidDataException: Non-square source pixels are unsupported. Export square pixels to preserve display geometry.\r\n   at VideoToUnity.Editor.VideoConverter.ValidateGeometry(Video video) in <path> 180\r\n   at VideoToUnity.Editor.VideoConverter.Convert() in <path> 105\r\n   --- End of inner exception stack trace ---\r\n   at VideoToUnity.Editor.VideoConverter.Convert() in <path> 166\r\n   at VideoToUnity.Editor.VideoConverter.<ConvertAsync>b__25_0() in <path> 73\r\n   at System.Threading.Tasks.Task`1.InnerInvoke()\r\n   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)\r\n--- End of stack trace from previous location ---\r\n   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)\r\n   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)\r\n--- End of stack trace from previous location ---\r\n   at VideoToUnity.Editor.VideoConverter.ConvertAsync() in <path>"
+    },
+    {
+      "case": "hdr-metadata.mov:packed:run:",
+      "expected_failure": "Export SDR",
+      "output": "System.InvalidOperationException: Video conversion failed: Export SDR Rec.709/sRGB video before conversion; HDR or wide-gamut primaries require a deliberate color transform.\r\n ---> System.IO.InvalidDataException: Export SDR Rec.709/sRGB video before conversion; HDR or wide-gamut primaries require a deliberate color transform.\r\n   at VideoToUnity.Editor.VideoConverter.ValidateGeometry(Video video) in <path> 186\r\n   at VideoToUnity.Editor.VideoConverter.Convert() in <path> 105\r\n   --- End of inner exception stack trace ---\r\n   at VideoToUnity.Editor.VideoConverter.Convert() in <path> 166\r\n   at VideoToUnity.Editor.VideoConverter.<ConvertAsync>b__25_0() in <path> 73\r\n   at System.Threading.Tasks.Task`1.InnerInvoke()\r\n   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)\r\n--- End of stack trace from previous location ---\r\n   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)\r\n   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)\r\n--- End of stack trace from previous location ---\r\n   at VideoToUnity.Editor.VideoConverter.ConvertAsync() in <path>"
+    },
+    {
+      "case": "real-alpha.anyextension:packed:run:",
+      "expected_failure": null,
+      "output": "PASS PackedH264 96x64 frames=12 alpha=0..255 538ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt709",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "bt709"
+      },
+      "rgb_max_error": 0,
+      "rgb_mean_error": 0.0,
+      "source_sha256": "43e26e4079fb793432cfd611ce6e1c8b41b23316d1b2366bc078b8ed5b420b30",
+      "output_sha256": "a8b1df7d427d7feb6277b0085d49a66c382ab5f5e5e11226d895b4527fc51189"
+    },
+    {
+      "case": "mirror-matte",
+      "output": "REJECTED CORRUPTION Matte differs from source at decoded byte 0 (error 64).\r\n"
+    },
+    {
+      "case": "single-pixel-middle-frame",
+      "output": "REJECTED CORRUPTION Matte differs from source at decoded byte 39701 (error 71).\r\n"
+    },
+    {
+      "case": "mirror-color",
+      "output": "REJECTED CORRUPTION Color differs from source at decoded byte 0 (error 197).\r\n"
+    },
+    {
+      "case": "existing-source-not-overwritten",
+      "output": "PASS"
+    },
+    {
+      "case": "709-matrix-missing-primaries-transfer.mov:packed:run:",
+      "expected_failure": null,
+      "output": "PASS PackedH264 128x64 frames=12 alpha=64..255 555ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt709",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "bt709"
+      },
+      "rgb_max_error": 3,
+      "rgb_mean_error": 0.2737223307291667,
+      "source_sha256": "a00beb6c60e53ae1626de685d936f686b201c94e33deccf1b404d735484430cc",
+      "output_sha256": "7e7deaed9a028a7f35f47ce9c48d1f42e389e6998d95b86296b34ac41c982e22",
+      "source_rgb_patch_max_error": 3,
+      "first_frame_rgb_patches": [
+        {
+          "xy": [
+            8,
+            32
+          ],
+          "source_rgb": [
+            255,
+            0,
+            0
+          ],
+          "output_rgb": [
+            254,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            24,
+            32
+          ],
+          "source_rgb": [
+            0,
+            255,
+            0
+          ],
+          "output_rgb": [
+            0,
+            253,
+            0
+          ]
+        },
+        {
+          "xy": [
+            40,
+            32
+          ],
+          "source_rgb": [
+            0,
+            0,
+            255
+          ],
+          "output_rgb": [
+            0,
+            0,
+            254
+          ]
+        },
+        {
+          "xy": [
+            56,
+            32
+          ],
+          "source_rgb": [
+            128,
+            128,
+            128
+          ],
+          "output_rgb": [
+            128,
+            128,
+            128
+          ]
+        },
+        {
+          "xy": [
+            72,
+            32
+          ],
+          "source_rgb": [
+            64,
+            128,
+            192
+          ],
+          "output_rgb": [
+            62,
+            126,
+            189
+          ]
+        },
+        {
+          "xy": [
+            88,
+            32
+          ],
+          "source_rgb": [
+            255,
+            0,
+            255
+          ],
+          "output_rgb": [
+            254,
+            0,
+            254
+          ]
+        },
+        {
+          "xy": [
+            104,
+            32
+          ],
+          "source_rgb": [
+            0,
+            255,
+            255
+          ],
+          "output_rgb": [
+            0,
+            254,
+            255
+          ]
+        },
+        {
+          "xy": [
+            120,
+            32
+          ],
+          "source_rgb": [
+            220,
+            160,
+            40
+          ],
+          "output_rgb": [
+            219,
+            159,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "case": "709-matrix-missing-primaries-transfer.mov:webm:run:",
+      "expected_failure": null,
+      "output": "PASS AlphaWebM 128x64 frames=12 alpha=64..255 420ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt470bg",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "bt709"
+      },
+      "rgb_max_error": 1,
+      "rgb_mean_error": 0.005208333333333333,
+      "source_sha256": "a00beb6c60e53ae1626de685d936f686b201c94e33deccf1b404d735484430cc",
+      "output_sha256": "8c4b3fef0b5c1b0f633b933fdd4d7c20bc41bc3d064e4f0557ffcf0963dba187",
+      "source_rgb_patch_max_error": 2,
+      "first_frame_rgb_patches": [
+        {
+          "xy": [
+            8,
+            32
+          ],
+          "source_rgb": [
+            255,
+            0,
+            0
+          ],
+          "output_rgb": [
+            253,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            24,
+            32
+          ],
+          "source_rgb": [
+            0,
+            255,
+            0
+          ],
+          "output_rgb": [
+            0,
+            255,
+            0
+          ]
+        },
+        {
+          "xy": [
+            40,
+            32
+          ],
+          "source_rgb": [
+            0,
+            0,
+            255
+          ],
+          "output_rgb": [
+            0,
+            0,
+            254
+          ]
+        },
+        {
+          "xy": [
+            56,
+            32
+          ],
+          "source_rgb": [
+            128,
+            128,
+            128
+          ],
+          "output_rgb": [
+            128,
+            128,
+            128
+          ]
+        },
+        {
+          "xy": [
+            72,
+            32
+          ],
+          "source_rgb": [
+            64,
+            128,
+            192
+          ],
+          "output_rgb": [
+            63,
+            127,
+            192
+          ]
+        },
+        {
+          "xy": [
+            88,
+            32
+          ],
+          "source_rgb": [
+            255,
+            0,
+            255
+          ],
+          "output_rgb": [
+            254,
+            0,
+            253
+          ]
+        },
+        {
+          "xy": [
+            104,
+            32
+          ],
+          "source_rgb": [
+            0,
+            255,
+            255
+          ],
+          "output_rgb": [
+            0,
+            255,
+            255
+          ]
+        },
+        {
+          "xy": [
+            120,
+            32
+          ],
+          "source_rgb": [
+            220,
+            160,
+            40
+          ],
+          "output_rgb": [
+            219,
+            159,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "case": "tagged-srgb709.mov:packed:run:",
+      "expected_failure": null,
+      "output": "PASS PackedH264 128x64 frames=12 alpha=64..255 602ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt709",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "iec61966-2-1"
+      },
+      "rgb_max_error": 3,
+      "rgb_mean_error": 0.2737223307291667,
+      "source_sha256": "01f4fbf4c06f339d0653f84cbe1623aa64ffc22ec4f1d7fdf7bff75a0ff05d2d",
+      "output_sha256": "1ce94baead14d4978dcd4b673dc9f7c2e7939b62c2698961fc17a997ba11d4c8",
+      "source_rgb_patch_max_error": 3,
+      "first_frame_rgb_patches": [
+        {
+          "xy": [
+            8,
+            32
+          ],
+          "source_rgb": [
+            255,
+            0,
+            0
+          ],
+          "output_rgb": [
+            254,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            24,
+            32
+          ],
+          "source_rgb": [
+            0,
+            255,
+            0
+          ],
+          "output_rgb": [
+            0,
+            253,
+            0
+          ]
+        },
+        {
+          "xy": [
+            40,
+            32
+          ],
+          "source_rgb": [
+            0,
+            0,
+            255
+          ],
+          "output_rgb": [
+            0,
+            0,
+            254
+          ]
+        },
+        {
+          "xy": [
+            56,
+            32
+          ],
+          "source_rgb": [
+            128,
+            128,
+            128
+          ],
+          "output_rgb": [
+            128,
+            128,
+            128
+          ]
+        },
+        {
+          "xy": [
+            72,
+            32
+          ],
+          "source_rgb": [
+            64,
+            128,
+            192
+          ],
+          "output_rgb": [
+            62,
+            126,
+            189
+          ]
+        },
+        {
+          "xy": [
+            88,
+            32
+          ],
+          "source_rgb": [
+            255,
+            0,
+            255
+          ],
+          "output_rgb": [
+            254,
+            0,
+            254
+          ]
+        },
+        {
+          "xy": [
+            104,
+            32
+          ],
+          "source_rgb": [
+            0,
+            255,
+            255
+          ],
+          "output_rgb": [
+            0,
+            254,
+            255
+          ]
+        },
+        {
+          "xy": [
+            120,
+            32
+          ],
+          "source_rgb": [
+            220,
+            160,
+            40
+          ],
+          "output_rgb": [
+            219,
+            159,
+            39
+          ]
+        }
+      ]
+    },
+    {
+      "case": "tagged-srgb709.mov:webm:run:",
+      "expected_failure": null,
+      "output": "PASS AlphaWebM 128x64 frames=12 alpha=64..255 438ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt470bg",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "iec61966-2-1"
+      },
+      "rgb_max_error": 1,
+      "rgb_mean_error": 0.005208333333333333,
+      "source_sha256": "01f4fbf4c06f339d0653f84cbe1623aa64ffc22ec4f1d7fdf7bff75a0ff05d2d",
+      "output_sha256": "8d156a04aa3ed71ec7fad40e5cf139f1cb96f8fba815e50a4812503e21bbc78b",
+      "source_rgb_patch_max_error": 2,
+      "first_frame_rgb_patches": [
+        {
+          "xy": [
+            8,
+            32
+          ],
+          "source_rgb": [
+            255,
+            0,
+            0
+          ],
+          "output_rgb": [
+            253,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            24,
+            32
+          ],
+          "source_rgb": [
+            0,
+            255,
+            0
+          ],
+          "output_rgb": [
+            0,
+            255,
+            0
+          ]
+        },
+        {
+          "xy": [
+            40,
+            32
+          ],
+          "source_rgb": [
+            0,
+            0,
+            255
+          ],
+          "output_rgb": [
+            0,
+            0,
+            254
+          ]
+        },
+        {
+          "xy": [
+            56,
+            32
+          ],
+          "source_rgb": [
+            128,
+            128,
+            128
+          ],
+          "output_rgb": [
+            128,
+            128,
+            128
+          ]
+        },
+        {
+          "xy": [
+            72,
+            32
+          ],
+          "source_rgb": [
+            64,
+            128,
+            192
+          ],
+          "output_rgb": [
+            63,
+            127,
+            192
+          ]
+        },
+        {
+          "xy": [
+            88,
+            32
+          ],
+          "source_rgb": [
+            255,
+            0,
+            255
+          ],
+          "output_rgb": [
+            254,
+            0,
+            253
+          ]
+        },
+        {
+          "xy": [
+            104,
+            32
+          ],
+          "source_rgb": [
+            0,
+            255,
+            255
+          ],
+          "output_rgb": [
+            0,
+            255,
+            255
+          ]
+        },
+        {
+          "xy": [
+            120,
+            32
+          ],
+          "source_rgb": [
+            220,
+            160,
+            40
+          ],
+          "output_rgb": [
+            219,
+            159,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "case": "709-matrix-missing-primaries-transfer-webm-0587a2.webm:packed:run:",
+      "expected_failure": null,
+      "output": "PASS PackedH264 128x64 frames=12 alpha=64..255 556ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt709",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "bt709"
+      },
+      "rgb_max_error": 0,
+      "rgb_mean_error": 0.0,
+      "source_sha256": "8c4b3fef0b5c1b0f633b933fdd4d7c20bc41bc3d064e4f0557ffcf0963dba187",
+      "output_sha256": "a1df7204bfbadd0c248742d6fb563d7b8132a1fe26f4a3a1f8e0c57ae684809e",
+      "source_rgb_patch_max_error": 4,
+      "first_frame_rgb_patches": [
+        {
+          "xy": [
+            8,
+            32
+          ],
+          "source_rgb": [
+            253,
+            0,
+            0
+          ],
+          "output_rgb": [
+            251,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            24,
+            32
+          ],
+          "source_rgb": [
+            0,
+            255,
+            0
+          ],
+          "output_rgb": [
+            0,
+            253,
+            0
+          ]
+        },
+        {
+          "xy": [
+            40,
+            32
+          ],
+          "source_rgb": [
+            0,
+            0,
+            254
+          ],
+          "output_rgb": [
+            0,
+            0,
+            251
+          ]
+        },
+        {
+          "xy": [
+            56,
+            32
+          ],
+          "source_rgb": [
+            128,
+            128,
+            128
+          ],
+          "output_rgb": [
+            124,
+            126,
+            126
+          ]
+        },
+        {
+          "xy": [
+            72,
+            32
+          ],
+          "source_rgb": [
+            63,
+            127,
+            192
+          ],
+          "output_rgb": [
+            61,
+            125,
+            188
+          ]
+        },
+        {
+          "xy": [
+            88,
+            32
+          ],
+          "source_rgb": [
+            254,
+            0,
+            253
+          ],
+          "output_rgb": [
+            253,
+            0,
+            251
+          ]
+        },
+        {
+          "xy": [
+            104,
+            32
+          ],
+          "source_rgb": [
+            0,
+            255,
+            255
+          ],
+          "output_rgb": [
+            0,
+            254,
+            252
+          ]
+        },
+        {
+          "xy": [
+            120,
+            32
+          ],
+          "source_rgb": [
+            219,
+            159,
+            38
+          ],
+          "output_rgb": [
+            218,
+            158,
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "case": "709-matrix-missing-primaries-transfer-webm-0587a2.webm:webm:run:",
+      "expected_failure": null,
+      "output": "PASS AlphaWebM 128x64 frames=12 alpha=64..255 440ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt470bg",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "bt709"
+      },
+      "rgb_max_error": 0,
+      "rgb_mean_error": 0.0,
+      "source_sha256": "8c4b3fef0b5c1b0f633b933fdd4d7c20bc41bc3d064e4f0557ffcf0963dba187",
+      "output_sha256": "4701a10e5f96057285dd924d42b8605d4d466d6d48613927bdc4ad6aa136f1e1",
+      "source_rgb_patch_max_error": 0,
+      "first_frame_rgb_patches": [
+        {
+          "xy": [
+            8,
+            32
+          ],
+          "source_rgb": [
+            253,
+            0,
+            0
+          ],
+          "output_rgb": [
+            253,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            24,
+            32
+          ],
+          "source_rgb": [
+            0,
+            255,
+            0
+          ],
+          "output_rgb": [
+            0,
+            255,
+            0
+          ]
+        },
+        {
+          "xy": [
+            40,
+            32
+          ],
+          "source_rgb": [
+            0,
+            0,
+            254
+          ],
+          "output_rgb": [
+            0,
+            0,
+            254
+          ]
+        },
+        {
+          "xy": [
+            56,
+            32
+          ],
+          "source_rgb": [
+            128,
+            128,
+            128
+          ],
+          "output_rgb": [
+            128,
+            128,
+            128
+          ]
+        },
+        {
+          "xy": [
+            72,
+            32
+          ],
+          "source_rgb": [
+            63,
+            127,
+            192
+          ],
+          "output_rgb": [
+            63,
+            127,
+            192
+          ]
+        },
+        {
+          "xy": [
+            88,
+            32
+          ],
+          "source_rgb": [
+            254,
+            0,
+            253
+          ],
+          "output_rgb": [
+            254,
+            0,
+            253
+          ]
+        },
+        {
+          "xy": [
+            104,
+            32
+          ],
+          "source_rgb": [
+            0,
+            255,
+            255
+          ],
+          "output_rgb": [
+            0,
+            255,
+            255
+          ]
+        },
+        {
+          "xy": [
+            120,
+            32
+          ],
+          "source_rgb": [
+            219,
+            159,
+            38
+          ],
+          "output_rgb": [
+            219,
+            159,
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "case": "709-YUV-mistagged-as601-rejected-by-decoded-RGB",
+      "output": "REJECTED CORRUPTION Color differs from source at decoded byte 0 (error 21).\r\n"
+    },
+    {
+      "case": "missing-H264-primaries-transfer-rejected",
+      "output": "REJECTED METADATA Output color metadata is missing or inconsistent (matrix=bt709, primaries=unknown, transfer=unknown, range=tv).\r\n"
+    },
+    {
+      "case": "valid-container-missing-H264-SPS-tags-rejected",
+      "output": "REJECTED METADATA Output color metadata is missing or inconsistent (matrix=bt709, primaries=unknown, transfer=unknown, range=tv).\r\n"
+    },
+    {
+      "case": "main-diagnostic-source.mov:packed:run:",
+      "expected_failure": null,
+      "output": "PASS PackedH264 128x64 frames=24 alpha=0..255 564ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt709",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "iec61966-2-1"
+      },
+      "rgb_max_error": 5,
+      "rgb_mean_error": 0.12218221028645833,
+      "source_sha256": "f0a887fa59082dfba2f562bbd2211426559f79d2250543719164b07a0b7a88df",
+      "output_sha256": "9db2422c9d2f225fbe74158e11c0e03fc1a453a4f590f3c19ae7045f3af0e729",
+      "source_rgb_patch_max_error": 2,
+      "first_frame_rgb_patches": [
+        {
+          "xy": [
+            16,
+            32
+          ],
+          "source_rgb": [
+            0,
+            0,
+            0
+          ],
+          "output_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            48,
+            32
+          ],
+          "source_rgb": [
+            0,
+            0,
+            0
+          ],
+          "output_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            80,
+            32
+          ],
+          "source_rgb": [
+            255,
+            0,
+            0
+          ],
+          "output_rgb": [
+            253,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            112,
+            32
+          ],
+          "source_rgb": [
+            0,
+            255,
+            0
+          ],
+          "output_rgb": [
+            0,
+            254,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "case": "main-diagnostic-source.mov:webm:run:",
+      "expected_failure": null,
+      "output": "PASS AlphaWebM 128x64 frames=24 alpha=0..255 461ms\r\n",
+      "verified_color_metadata": {
+        "color_space": "bt470bg",
+        "color_range": "tv",
+        "color_primaries": "bt709",
+        "color_transfer": "iec61966-2-1"
+      },
+      "rgb_max_error": 8,
+      "rgb_mean_error": 0.024875217013888888,
+      "source_sha256": "f0a887fa59082dfba2f562bbd2211426559f79d2250543719164b07a0b7a88df",
+      "output_sha256": "94686054da4f43f83a99f7606ebdb3e6d6de8fba084b4e825c9355c5eb8ff782",
+      "source_rgb_patch_max_error": 2,
+      "first_frame_rgb_patches": [
+        {
+          "xy": [
+            16,
+            32
+          ],
+          "source_rgb": [
+            0,
+            0,
+            0
+          ],
+          "output_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            48,
+            32
+          ],
+          "source_rgb": [
+            0,
+            0,
+            0
+          ],
+          "output_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            80,
+            32
+          ],
+          "source_rgb": [
+            255,
+            0,
+            0
+          ],
+          "output_rgb": [
+            253,
+            0,
+            0
+          ]
+        },
+        {
+          "xy": [
+            112,
+            32
+          ],
+          "source_rgb": [
+            0,
+            255,
+            0
+          ],
+          "output_rgb": [
+            0,
+            255,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "case": "cancel-test.mov:packed:cancel:Checking every",
+      "expected_failure": null,
+      "output": "CANCELLED 113ms; Video conversion cancelled.\r\n"
+    },
+    {
+      "case": "cancel-test.mov:packed:cancel:Decoding real",
+      "expected_failure": null,
+      "output": "CANCELLED 116ms; Video conversion cancelled.\r\n"
+    },
+    {
+      "case": "cancel-test.mov:packed:cancel:Decoding full",
+      "expected_failure": null,
+      "output": "CANCELLED 116ms; Video conversion cancelled.\r\n"
+    },
+    {
+      "case": "cancel-test.mov:packed:cancel:Encoding",
+      "expected_failure": null,
+      "output": "CANCELLED 120ms; Video conversion cancelled.\r\n"
+    },
+    {
+      "case": "cancel-test.mov:packed:cancel:Verifying output",
+      "expected_failure": null,
+      "output": "CANCELLED 35ms; Video conversion cancelled.\r\n"
+    },
+    {
+      "case": "cancel-test.mov:packed:cancel:Comparing the complete",
+      "expected_failure": null,
+      "output": "CANCELLED 117ms; Video conversion cancelled.\r\n"
+    },
+    {
+      "case": "cancel-test.mov:packed:cancel:Comparing every",
+      "expected_failure": null,
+      "output": "CANCELLED 118ms; Video conversion cancelled.\r\n"
+    },
+    {
+      "case": "cancel-test.mov:webm:dispose:Encoding",
+      "expected_failure": null,
+      "output": "CANCELLED 117ms; Video conversion cancelled.\r\n"
+    }
+  ]
+}

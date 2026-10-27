@@ -1,0 +1,130 @@
+[
+  {
+    "path": "package.json",
+    "sha256": "D3E3BDA7B8762DCA57C9BC5A368A26CA482F5304E907EB7188063C42BFB5526D"
+  },
+  {
+    "path": "Editor/VideoToUnity.Editor.asmdef",
+    "sha256": "9A64493663A9390B432C24BE0EAAC0133F4CEC4C8CF8A6B4B16D6BACBA3B02F6"
+  },
+  {
+    "path": "Editor/Conversion/VideoConverter.cs",
+    "sha256": "7D2F63C4C6F630F343557B019CE3529FFCEB35C53549AB81BD5B75E648EDD128"
+  },
+  {
+    "path": "Editor/Conversion/Validation~/evidence.json",
+    "sha256": "B58C580758753FD3B6A87894055F45512DF2E06CEAEDF6F9607180AF01EE6554"
+  },
+  {
+    "path": "Editor/Conversion/Validation~/Harness.cs",
+    "sha256": "94A1F3D4F48B307BDA066B1088CA0259C3F2F27C0F04EBA6C520C56A8A009292"
+  },
+  {
+    "path": "Editor/UI/VideoEffectAssetInspector.cs",
+    "sha256": "095D0853E168E28E6EB870C7F1614967DA8C4B5A924AF847D1F866BD10CA5544"
+  },
+  {
+    "path": "Editor/UI/VideoEffectConversionOperation.cs",
+    "sha256": "C531965D2302ABB7B261F477B72D7492E299C387B846678911F246F00EA1EDB5"
+  },
+  {
+    "path": "Editor/UI/VideoEffectEditorPaths.cs",
+    "sha256": "B13272BE26987331C39E7330DE1ED793524E7E526C6118EDE922F47D584107E6"
+  },
+  {
+    "path": "Editor/UI/VideoEffectFileTransfer.cs",
+    "sha256": "15E1B4923AE4B2BE3F8ADEB2AF825F67ABE0A62F18A699AB30171252813E9EF3"
+  },
+  {
+    "path": "Editor/UI/VideoEffectImportSettings.cs",
+    "sha256": "E9A02EBE7B5B8E2A823462AD1D8BF3B8563C9AB99D8B0DB96ACA36EAAAA9CDB9"
+  },
+  {
+    "path": "Editor/UI/VideoEffectObjectFactory.cs",
+    "sha256": "694F5EADA8D19B87F98F3FD01A64A7B6EF168944BDD041C78A4EA4F3C7B45FC4"
+  },
+  {
+    "path": "Editor/UI/VideoEffectWindow.cs",
+    "sha256": "AD9BDEE97FDEF47E72ED1023D296B0CF78280DC7BD35B50DDCCDFE6E2D81BED1"
+  },
+  {
+    "path": "Editor/UI/Validation~/FileTransferTests.cs",
+    "sha256": "66828AA2365051984C94DD4700E4A1CE7430E6676A3A4E6B21587E71E26FCB09"
+  },
+  {
+    "path": "Runtime/VideoEffectAsset.cs",
+    "sha256": "A58BE070249D65EE826679F8E373A10DD83308FCFE0363CBDF3C24DEF381D8BC"
+  },
+  {
+    "path": "Runtime/VideoEffectPlayer.cs",
+    "sha256": "670B24B47A0F8EDF4528615E315B062ECA5138E20E615174FF8741E2E59598B8"
+  },
+  {
+    "path": "Runtime/VideoEffectView.cs",
+    "sha256": "3F00A60B269B2EBE5AFC14382A24C261DF8BB1E6C223DCE3224DDB917D3F7EF1"
+  },
+  {
+    "path": "Runtime/VideoToUnity.Runtime.asmdef",
+    "sha256": "18F5D6E9BB63505747B0DD912E7A222B3F86F92B491203235F360CD5CBF09A97"
+  },
+  {
+    "path": "Runtime/Resources/VideoToUnity/VideoComposite.shader",
+    "sha256": "5E6D7EB21FA677222C91729CED5E553C2E1B3C5619C1B5D20484AA39FEC5E873"
+  },
+  {
+    "path": "Samples~/Basic/PlayVideoEffect.cs",
+    "sha256": "C8D1FCF6D96C3AAD28ACDE1F267598AAE3C66BBFBB0BFF1F98EA80035057325B"
+  },
+  {
+    "path": "Tests/Editor/EditorIntegrationTests.cs",
+    "sha256": "31B3EBC347E33EE901C6478D414EAA408E46B89C84BD013CCB50B23D2901C296"
+  },
+  {
+    "path": "Tests/Editor/VideoEffectTests.cs",
+    "sha256": "5CFFEB4B9A53C444F3B376BFDB8F9F9C65FE45420A9BE923DF1106AC507749DA"
+  },
+  {
+    "path": "Tests/Editor/VideoPlaybackTests.cs",
+    "sha256": "EFD7BB3CD0DA48ED8EEC5DBA303876ABE30BA7D89CB2F09577F442C23E19323E"
+  },
+  {
+    "path": "Tests/Editor/VideoToUnity.Tests.asmdef",
+    "sha256": "AFEA1790F19F50D9B8D763A1A7CA510B971933298DD64EFF1DA307EF5EF33EA2"
+  },
+  {
+    "path": "Timeline/AssemblyInfo.cs",
+    "sha256": "15A550D6DA4B47347563AA188DFD2A41E44E1FC7FC5B32E57131DBF4FD9252EA"
+  },
+  {
+    "path": "Timeline/VideoEffectBehaviour.cs",
+    "sha256": "B865B5CC45171842FC8C0E09577CDE891CCB9FB7A4809BB2C012FE62511EC81D"
+  },
+  {
+    "path": "Timeline/VideoEffectClip.cs",
+    "sha256": "273A0CA3BCE8A14D985134063FA687218EB0BBA65F48D2735BE766D0042A5F2F"
+  },
+  {
+    "path": "Timeline/VideoEffectMixerBehaviour.cs",
+    "sha256": "5F0CD598FD2A10BB7831079164D6DDF3A99895ACC55618BF6569A0C4E91E4863"
+  },
+  {
+    "path": "Timeline/VideoEffectTrack.cs",
+    "sha256": "3FAE5330DA54D908AB0D89016210C9EC5026CDF6717A45A747496165597D060D"
+  },
+  {
+    "path": "Timeline/VideoToUnity.Timeline.asmdef",
+    "sha256": "D79A1971E98B8B064552BE7BFD3C7607D74B52BADFED2CF91CFD4AF67F02FEC2"
+  },
+  {
+    "path": "Timeline/Editor/VideoEffectClipEditor.cs",
+    "sha256": "49CE37141129450922C47FCEB5B817D06A8B9EF6CD4023DB5C95AF2607054514"
+  },
+  {
+    "path": "Timeline/Editor/VideoEffectPreviewPump.cs",
+    "sha256": "2883F27506CD83148B3168A8581CB1B0C2340C83DE9EC3353D5E742DBF8B9264"
+  },
+  {
+    "path": "Timeline/Editor/VideoToUnity.Timeline.Editor.asmdef",
+    "sha256": "EF3B55BFD7D898E10FCAF05F129F6EA881256FC3A1B1065F588BBBDFB96222FF"
+  }
+]

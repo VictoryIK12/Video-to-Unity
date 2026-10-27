@@ -1,0 +1,31 @@
+{
+  "name": "com.victoryik.video-to-unity",
+  "version": "3.0.0-preview.5",
+  "displayName": "Video to Unity",
+  "description": "Reusable video effects with automatic color-background extraction, protected regions, native playback, GPU compositing, placement and Timeline.",
+  "unity": "2022.3",
+  "author": {
+    "name": "VictoryIK12",
+    "url": "https://github.com/VictoryIK12"
+  },
+  "documentationUrl": "https://github.com/VictoryIK12/Video-to-Unity",
+  "dependencies": {
+    "com.unity.ugui": "1.0.0",
+    "com.unity.timeline": "1.7.6",
+    "com.unity.modules.video": "1.0.0",
+    "com.unity.modules.audio": "1.0.0"
+  },
+  "samples": [
+    {
+      "displayName": "Basic video effects",
+      "description": "Small diagnostic videos and runtime usage example.",
+      "path": "Samples~/Basic"
+    },
+    {
+      "displayName": "MP4 background removal",
+      "description": "Opaque black/green diagnostic clips with enclosed black artwork and soft edges.",
+      "path": "Samples~/BackgroundRemoval"
+    }
+  ],
+  "license": "MIT"
+}

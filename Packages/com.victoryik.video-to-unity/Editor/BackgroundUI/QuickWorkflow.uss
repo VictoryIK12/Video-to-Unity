@@ -1,0 +1,11 @@
+.quick-window { flex-grow: 1; min-height: 0; padding: 14px; }
+.quick-drop { flex-shrink: 0; padding: 14px; margin-top: 8px; margin-bottom: 8px; border-width: 2px; border-color: rgb(117, 127, 186); border-radius: 6px; }
+.quick-drop-active { background-color: rgba(91, 117, 190, 0.25); border-color: rgb(120, 180, 250); }
+.quick-source-name { font-size: 16px; -unity-font-style: bold; white-space: normal; }
+.quick-primary { min-height: 38px; margin-top: 8px; background-color: rgb(61, 95, 162); color: white; -unity-font-style: bold; }
+.quick-primary:disabled { background-color: rgb(75, 75, 80); color: rgb(170, 170, 170); }
+.quick-window > .unity-scroll-view__content-viewport > .unity-scroll-view__content-container > * { flex-shrink: 0; }
+.quick-window .unity-foldout { margin-top: 8px; margin-bottom: 6px; }
+.quick-window .background-preview-stage { height: 210px; min-height: 210px; }
+
+.quick-footer { flex-shrink: 0; padding: 10px; border-top-width: 1px; border-top-color: rgba(128, 128, 128, 0.5); }

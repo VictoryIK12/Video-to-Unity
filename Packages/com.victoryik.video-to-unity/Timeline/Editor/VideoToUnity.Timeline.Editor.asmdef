@@ -1,0 +1,7 @@
+{
+  "name": "VideoToUnity.Timeline.Editor",
+  "rootNamespace": "VideoToUnity.Timeline.Editor",
+  "references": ["VideoToUnity.Runtime", "VideoToUnity.Timeline", "Unity.Timeline", "Unity.Timeline.Editor"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}

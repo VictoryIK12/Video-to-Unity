@@ -1,0 +1,120 @@
+{
+  "version": "3.0.0-preview.5",
+  "date": "2026-10-27",
+  "scope": "Quick workflow native regression, including five save modes, name persistence after reimport, scene labels and Undo. Earlier full-suite results remain recorded for preview.4.",
+  "runs": [
+    {
+      "unity": "6000.3.23f1",
+      "mode": "EditMode",
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0,
+      "xml_sha256": "29bd26ddb10f072f117e86c8cce3628281ae23e6f0898e561ee6452ce8d78970",
+      "cases": [
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.AlphaAndDirectModesSaveReusableEffectsInOneWindow",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.ChangingSourceDropsPreviousMasksAndRejectsStaleAdd",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DragAnalyzePreviewAddAndUndoInOneWindow",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"movie.MP4\",True)",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"clip.mov\",True)",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"picture.png\",False)",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"script.exe\",False)",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.OpaquePreviewDoesNotModifySourceAlpha",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.PackedPreviewReadsRightHalfAlphaAndPreservesBlackArtwork",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.RecommendationKeepsPotentialAlphaEvenWithUniformBorders",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.UncertainBackgroundIsNeverAutomaticallyRemoved",
+          "result": "Passed"
+        }
+      ]
+    },
+    {
+      "unity": "2022.3.62f3",
+      "mode": "EditMode",
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0,
+      "xml_sha256": "c8520030eda6a58d87d3dfc7d5c6372669f1e9d10f4bc5ebf12e8fe6df1fecce",
+      "cases": [
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.AlphaAndDirectModesSaveReusableEffectsInOneWindow",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.ChangingSourceDropsPreviousMasksAndRejectsStaleAdd",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DragAnalyzePreviewAddAndUndoInOneWindow",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"movie.MP4\",True)",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"clip.mov\",True)",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"picture.png\",False)",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.DropFilterAcceptsOnlyVideoFiles(\"script.exe\",False)",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.OpaquePreviewDoesNotModifySourceAlpha",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.PackedPreviewReadsRightHalfAlphaAndPreservesBlackArtwork",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.RecommendationKeepsPotentialAlphaEvenWithUniformBorders",
+          "result": "Passed"
+        },
+        {
+          "name": "VideoToUnity.Tests.QuickWorkflowTests.UncertainBackgroundIsNeverAutomaticallyRemoved",
+          "result": "Passed"
+        }
+      ]
+    }
+  ],
+  "source_sha256_text_normalized_lf": {
+    "Editor/BackgroundUI/BackgroundRemovalWindow.Quick.cs": "e16e577e8fc4f80562b73ed591feffbdbeda713994e7c5fa2428cbe43ec1566f",
+    "Editor/UI/VideoEffectAssetInspector.cs": "0e734a9711676ca7ef6c2a3f7eb10d16042e245aca565acae112d52d78fcaaf4",
+    "Tests/Editor/QuickWorkflowTests.cs": "2f53550a24a4fe918bc3e16189865c73c367ac4f5e0b3459112f90ad65e3a936"
+  }
+}

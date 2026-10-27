@@ -1,0 +1,6 @@
+{
+  "name": "VideoToUnity.Timeline",
+  "rootNamespace": "VideoToUnity.Timeline",
+  "references": ["VideoToUnity.Runtime", "Unity.Timeline"],
+  "autoReferenced": true
+}

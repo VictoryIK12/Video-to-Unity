@@ -1,0 +1,12 @@
+{
+  "file": "Fixtures/packed-alpha.mp4",
+  "sha256": "548C364E4B1DB1A2244A26C973886097E0FF7E0330CA872F04BD8D7B60695CA3",
+  "logicalWidth": 128,
+  "logicalHeight": 64,
+  "codedWidth": 256,
+  "codedHeight": 64,
+  "frames": 24,
+  "framesPerSecond": 12,
+  "provenance": "Final canonical Samples~/Basic/Media/packed-alpha.mp4 after converter color-tag correction; actual native pipeline runs use this exact file",
+  "regions": "x0..31 transparent; x32..63 opaque black; x64..95 half red; x96..127 opaque green; bottom 8x8 blue moving marker excluded from samples"
+}

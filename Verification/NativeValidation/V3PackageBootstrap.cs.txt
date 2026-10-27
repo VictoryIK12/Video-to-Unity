@@ -1,0 +1,64 @@
+using System;
+using System.IO;
+using UnityEngine;
+using UnityEditor;
+using UnityEditor.PackageManager;
+using UnityEditor.PackageManager.Requests;
+
+[InitializeOnLoad]
+public static class V3PackageBootstrap
+{
+    static AddAndRemoveRequest request;
+    static double deadline;
+    static string Project => Path.GetDirectoryName(Application.dataPath);
+    static V3PackageBootstrap() { EditorApplication.update += Poll; }
+    public static void Install()
+    {
+        SessionState.SetInt("V3InstallPhase", 1);
+        deadline = EditorApplication.timeSinceStartup + 600;
+        request = Client.AddAndRemove(new[] { "file:PACKAGE_PATH", "com.unity.ugui@UGUI_VERSION", "com.unity.test-framework@TEST_VERSION" });
+    }
+    static void Poll()
+    {
+        int phase = SessionState.GetInt("V3InstallPhase", 0);
+        if (phase == 0) return;
+        if (deadline == 0) deadline = EditorApplication.timeSinceStartup + 600;
+        if (EditorApplication.timeSinceStartup > deadline) { Exit("Install or compilation timeout", 2); return; }
+        if (request != null && !request.IsCompleted) return;
+        if (request != null && request.Status == StatusCode.Failure) { Exit(request.Error.message, 2); return; }
+        if (EditorApplication.isCompiling || EditorApplication.isUpdating) return;
+        if (Type.GetType("VideoToUnity.VideoEffectPlayer, VideoToUnity.Runtime") == null) return;
+        if (phase == 1)
+        {
+            CopySuite("Editor", "VideoToUnity.Tests", "VideoToUnity.Validation.Native", "VideoToUnityNativeTests");
+            CopySuite("PlayMode", "VideoToUnity.PlayMode.Tests", "VideoToUnity.Validation.PlayMode", "VideoToUnityPlayModeTests");
+            PlayerSettings.colorSpace = ColorSpace.Gamma;
+            SessionState.SetInt("V3InstallPhase", 2);
+            AssetDatabase.Refresh();
+            return;
+        }
+        if (Type.GetType("VideoToUnity.Tests.VideoEffectTests, VideoToUnity.Validation.Native") == null) return;
+        if (Type.GetType("VideoToUnity.Tests.RuntimePlaybackTests, VideoToUnity.Validation.PlayMode") == null) return;
+        AssetDatabase.SaveAssets();
+        Exit(Application.unityVersion + " | Runtime and native-test assemblies loaded | " + SystemInfo.graphicsDeviceName, 0);
+    }
+    public static void Linear() { PlayerSettings.colorSpace = ColorSpace.Linear; AssetDatabase.SaveAssets(); }
+    public static void Gamma() { PlayerSettings.colorSpace = ColorSpace.Gamma; AssetDatabase.SaveAssets(); }
+    static void CopySuite(string kind, string sourceName, string targetName, string folder)
+    {
+        string tests = "PACKAGE_PATH/Tests/" + kind;
+        string target = Path.Combine(Application.dataPath, folder);
+        Directory.CreateDirectory(target);
+        foreach (string path in Directory.GetFiles(tests, "*.cs"))
+            File.Copy(path, Path.Combine(target, Path.GetFileName(path)), true);
+        string assembly = File.ReadAllText(Path.Combine(tests, sourceName + ".asmdef"));
+        File.WriteAllText(Path.Combine(target, targetName + ".asmdef"),
+            assembly.Replace("\"name\": \"" + sourceName + "\"", "\"name\": \"" + targetName + "\""));
+    }
+    static void Exit(string message, int code)
+    {
+        SessionState.SetInt("V3InstallPhase", 0);
+        File.WriteAllText(Path.Combine(Project, code == 0 ? "install-ok.txt" : "install-failed.txt"), message);
+        EditorApplication.Exit(code);
+    }
+}

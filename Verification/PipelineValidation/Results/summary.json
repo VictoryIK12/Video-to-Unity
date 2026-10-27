@@ -1,0 +1,56 @@
+[
+  {
+    "pipeline": "urp",
+    "passed": true,
+    "cases": 7,
+    "pixelChecks": 28,
+    "maximumRgbaError": 0.00390625,
+    "halfRed": {
+      "r": 0.50244140625,
+      "g": 0.0,
+      "b": 0.49609375,
+      "a": 0.50390625
+    },
+    "fixture": "packed-alpha.mp4",
+    "fixtureSha256": "548C364E4B1DB1A2244A26C973886097E0FF7E0330CA872F04BD8D7B60695CA3",
+    "startedUtc": "2026-10-26T22:07:34.1230676Z",
+    "unity": "6000.3.23f1",
+    "gpu": "NVIDIA GeForce RTX 5080",
+    "graphicsApi": "Direct3D11",
+    "colorSpace": "Linear",
+    "resolution": [
+      256,
+      128
+    ],
+    "renderPipelineInstance": "UnityEngine.Rendering.Universal.UniversalRenderPipeline",
+    "processExited": true,
+    "processId": 46336
+  },
+  {
+    "pipeline": "hdrp",
+    "passed": true,
+    "cases": 7,
+    "pixelChecks": 28,
+    "maximumRgbaError": 0.00390625,
+    "halfRed": {
+      "r": 0.50244140625,
+      "g": 0.0,
+      "b": 0.49609375,
+      "a": 0.50390625
+    },
+    "fixture": "packed-alpha.mp4",
+    "fixtureSha256": "548C364E4B1DB1A2244A26C973886097E0FF7E0330CA872F04BD8D7B60695CA3",
+    "startedUtc": "2026-10-26T22:07:34.3560849Z",
+    "unity": "6000.3.23f1",
+    "gpu": "NVIDIA GeForce RTX 5080",
+    "graphicsApi": "Direct3D11",
+    "colorSpace": "Linear",
+    "resolution": [
+      256,
+      128
+    ],
+    "renderPipelineInstance": "UnityEngine.Rendering.HighDefinition.HDRenderPipeline",
+    "processExited": true,
+    "processId": 28608
+  }
+]

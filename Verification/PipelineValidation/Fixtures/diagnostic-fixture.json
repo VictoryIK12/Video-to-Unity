@@ -1,0 +1,12 @@
+{
+  "file": "Fixtures/packed-tagged.mp4",
+  "sha256": "063DAE750FF7A0B252D5E647DF010655FC373A16E49E378C42B626E5A4B5D92A",
+  "logicalWidth": 128,
+  "logicalHeight": 64,
+  "codedWidth": 256,
+  "codedHeight": 64,
+  "frames": 24,
+  "framesPerSecond": 12,
+  "provenance": "Coordinator supplied H.264 bitstream-tag-corrected synthetic fixture; not output-converter validation",
+  "regions": "x0..31 transparent; x32..63 opaque black; x64..95 half red; x96..127 opaque green; bottom 8x8 blue moving marker excluded from samples"
+}

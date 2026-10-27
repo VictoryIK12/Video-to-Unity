@@ -1,0 +1,12 @@
+{
+  "name": "VideoToUnity.Editor",
+  "rootNamespace": "VideoToUnity.Editor",
+  "references": [
+    "VideoToUnity.Runtime",
+    "UnityEngine.UI",
+    "Unity.Timeline"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ]
+}

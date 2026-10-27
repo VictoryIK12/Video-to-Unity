@@ -1,0 +1,13 @@
+Initialize engine version: 6000.3.23f1 (09d2ecc7fb28)
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 5080 (ID=0x2c02)
+    Vendor:   NVIDIA
+    VRAM:     15977 MB
+VTU case background passed=True
+VTU case WorldSpace-none passed=True
+VTU case WorldSpace-Mask passed=True
+VTU case WorldSpace-RectMask2D passed=True
+VTU case ScreenSpaceCamera-none passed=True
+VTU case ScreenSpaceCamera-Mask passed=True
+VTU case ScreenSpaceCamera-RectMask2D passed=True

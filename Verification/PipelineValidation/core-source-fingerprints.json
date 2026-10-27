@@ -1,0 +1,27 @@
+[
+  {
+    "path": "Runtime/VideoEffectAsset.cs",
+    "sha256": "A58BE070249D65EE826679F8E373A10DD83308FCFE0363CBDF3C24DEF381D8BC",
+    "matchesSnapshot": true
+  },
+  {
+    "path": "Runtime/VideoEffectPlayer.cs",
+    "sha256": "670B24B47A0F8EDF4528615E315B062ECA5138E20E615174FF8741E2E59598B8",
+    "matchesSnapshot": true
+  },
+  {
+    "path": "Runtime/VideoEffectView.cs",
+    "sha256": "3F00A60B269B2EBE5AFC14382A24C261DF8BB1E6C223DCE3224DDB917D3F7EF1",
+    "matchesSnapshot": true
+  },
+  {
+    "path": "Runtime/VideoToUnity.Runtime.asmdef",
+    "sha256": "18F5D6E9BB63505747B0DD912E7A222B3F86F92B491203235F360CD5CBF09A97",
+    "matchesSnapshot": true
+  },
+  {
+    "path": "Runtime/Resources/VideoToUnity/VideoComposite.shader",
+    "sha256": "5E6D7EB21FA677222C91729CED5E553C2E1B3C5619C1B5D20484AA39FEC5E873",
+    "matchesSnapshot": true
+  }
+]

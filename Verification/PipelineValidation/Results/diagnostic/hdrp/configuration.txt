@@ -1,0 +1,14 @@
+Unity=6000.3.23f1
+Pipeline=UnityEngine.Rendering.HighDefinition.HDRenderPipelineAsset
+Asset=Assets/Settings/HDRP High Fidelity.asset
+ColorSpace=Linear
+GraphicsAPI=Direct3D11
+GPU=NVIDIA GeForce RTX 5080
+Target=256x128 ARGBHalf Linear depth24 AA1
+Camera=orthographic; no scene volumes; postprocessing disabled where supported
+HDRP colorBufferFormat=R16G16B16A16
+com.unity.render-pipelines.high-definition@17.3.0
+com.unity.ugui@2.0.0
+com.victoryik.video-to-unity@3.0.0-preview.1
+com.unity.render-pipelines.core@17.3.0
+com.unity.render-pipelines.high-definition-config@17.3.0

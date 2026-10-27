@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-27",
+  "standalone_geometry": {
+    "failed": 0,
+    "runner": "Verification/PublicRelease/RunUsabilityChecks.ps1",
+    "passed": 9
+  },
+  "managed_compilation": {
+    "failed": 0,
+    "warnings_as_errors": true,
+    "versions": [
+      "2022.3.62f3",
+      "6000.3.23f1"
+    ],
+    "assemblies_per_version": 7,
+    "runner": "Verification/CompileManaged.ps1",
+    "passed": 14
+  },
+  "native_usability": {
+    "authored_tests": 6,
+    "executed_here": true,
+    "owner": "Integrator",
+    "class": "VideoToUnity.Tests.BackgroundUsabilityAuditTests",
+    "executions": 24,
+    "failed": 0,
+    "evidence": "../NativeValidation/evidence.json"
+  },
+  "limitations": [
+    "Native and visual checks cover Windows Editors, not all target devices or standalone builds.",
+    "Color sampling uses the displayed decoded preview resolution.",
+    "Presets choose fixed manual colors and preserve all protected rectangles.",
+    "Single-frame previews cannot display temporal smoothing."
+  ],
+  "logs": "Local .out directory, excluded from version control.",
+  "source_sha256_text_normalized_lf": {
+    "Packages/com.victoryik.video-to-unity/Editor/BackgroundUI/BackgroundRemovalUiModel.cs": "ff7b4c8cc26a722e29c8644ac3e1b653334cf2485abd70b4238e4f29b9e34133",
+    "Packages/com.victoryik.video-to-unity/Editor/BackgroundUI/BackgroundRemovalWindow.cs": "596da2272be51324acfdec17d6c5928465f0fdd48e7048a52e1b2dd226f3ac2a",
+    "Packages/com.victoryik.video-to-unity/Editor/BackgroundUI/BackgroundRemovalWindow.uss": "062bf03c628095deb23743b44aaa033c1446a1c83b73d3d2f7bf14a83854b16e",
+    "Packages/com.victoryik.video-to-unity/Tests/Editor/BackgroundUsabilityAuditTests.cs": "5e9d77deef3beafc0f9985f7e91ce14b870351cb58137d2b6e1069d8ce3739fc"
+  },
+  "visual_editor_check": "UX.md"
+}

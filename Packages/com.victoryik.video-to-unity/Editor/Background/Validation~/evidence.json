@@ -1,0 +1,263 @@
+{
+  "ffmpeg": "ffmpeg version N-126374-g089a48eb36-20260831 Copyright (c) 2000-2026 the FFmpeg developers",
+  "results": [
+    {
+      "test": "analysis-auto-black-and-color",
+      "pass": true,
+      "ms": 855,
+      "notes": [
+        "black.mp4 color=0,0,0 confidence=0.975",
+        "green.mp4 color=0,175,63 confidence=1.000"
+      ],
+      "error": null
+    },
+    {
+      "test": "convert-packed-auto-black",
+      "pass": true,
+      "ms": 1309,
+      "notes": [
+        "PackedH264 frames=48 alpha=0..255 worstTimingError=0ms"
+      ],
+      "error": null
+    },
+    {
+      "test": "convert-webm-auto-green",
+      "pass": true,
+      "ms": 1118,
+      "notes": [
+        "WebM VP8 alpha frames=48 alpha=0..255"
+      ],
+      "error": null
+    },
+    {
+      "test": "preview-time-and-orientation",
+      "pass": true,
+      "ms": 4020,
+      "notes": [
+        "t→frame 0→0, .5→12, .52→12, .499→11, 1.97→47, 99→47 (clamped); 96x54 top-down; full-size seek frames 0/12/47 byte-identical to sequential decode"
+      ],
+      "error": null
+    },
+    {
+      "test": "preview-protected-region",
+      "pass": true,
+      "ms": 855,
+      "notes": [
+        "protected top-left 25% alpha 0→255; outside stays 0"
+      ],
+      "error": null
+    },
+    {
+      "test": "straight-rgb-soft-edges-packed",
+      "pass": true,
+      "ms": 1010,
+      "notes": [
+        "PackedH264: 33111 partial-alpha pixels; max alpha error 2, straight red error 5 (premultiplied would differ by up to 93)"
+      ],
+      "error": null
+    },
+    {
+      "test": "straight-rgb-soft-edges-webm",
+      "pass": true,
+      "ms": 823,
+      "notes": [
+        "AlphaWebM: 33111 partial-alpha pixels; max alpha error 5, straight red error 6 (premultiplied would differ by up to 93)"
+      ],
+      "error": null
+    },
+    {
+      "test": "low-confidence-stops-auto-manual-proceeds",
+      "pass": true,
+      "ms": 2089,
+      "notes": [
+        "analysis confidence=0.500",
+        "Preview auto stopped: Background processing failed: Automatic background detection is uncertain (50% confidence). Mixed border colors. Select the intended background color manually.",
+        "Convert auto stopped: Background processing failed: Automatic background detection is uncertain (50% confidence). Mixed border colors. Select the intended background color manually.",
+        "manual preview and packed convert proceed"
+      ],
+      "error": null
+    },
+    {
+      "test": "timing-ntsc-offset-audio",
+      "pass": true,
+      "ms": 1321,
+      "notes": [
+        "29.97fps start=1.250000s +audio → 60 frames, start 0, worst 0.5ms (WebM ms clock), audio dropped"
+      ],
+      "error": null
+    },
+    {
+      "test": "reject-vfr",
+      "pass": true,
+      "ms": 263,
+      "notes": [
+        "Background processing failed: Variable frame timing detected: frame 20 follows the previous frame after 62.5 ms instead of 41.667 ms. Re-export the video at a constant frame rate; timing is never changed silently."
+      ],
+      "error": null
+    },
+    {
+      "test": "reject-odd-dimensions",
+      "pass": true,
+      "ms": 149,
+      "notes": [
+        "Background processing failed: Video is 191x108. An even width and height are required; no pixels are resized, padded or cropped."
+      ],
+      "error": null
+    },
+    {
+      "test": "reject-hdr",
+      "pass": true,
+      "ms": 194,
+      "notes": [
+        "Background processing failed: HDR or BT.2020 transfer (smpte2084) is unsupported. Export SDR Rec.709/sRGB video first."
+      ],
+      "error": null
+    },
+    {
+      "test": "reject-rotation",
+      "pass": true,
+      "ms": 131,
+      "notes": [
+        "Background processing failed: Rotation/display-transform metadata is unsupported. Bake the rotation into the source pixels first."
+      ],
+      "error": null
+    },
+    {
+      "test": "reject-two-video-streams",
+      "pass": true,
+      "ms": 146,
+      "notes": [
+        "Background processing failed: Exactly one video stream is required; this file has 2. Remove additional video or cover-art streams before processing."
+      ],
+      "error": null
+    },
+    {
+      "test": "reject-truncated",
+      "pass": true,
+      "ms": 150,
+      "notes": [
+        "Background processing failed: ffprobe failed (exit 0): [h264 @ 000001f318cd3b00] Invalid NAL unit size (95 > 62).\r\n[h264 @ 000001f318cd3b00] missing picture in access unit with size 66\r\n[mov,mp4,m4a,3gp,3g2,mj2 @ 000001f318bf2dc0] stream 0, offset 0xb40: partial file"
+      ],
+      "error": null
+    },
+    {
+      "test": "reject-nothing-removed",
+      "pass": true,
+      "ms": 168,
+      "notes": [
+        "Background processing failed: No background was removed: every pixel stayed opaque. Adjust the background color, threshold or protected regions."
+      ],
+      "error": null
+    },
+    {
+      "test": "warn-whole-video-transparent",
+      "pass": true,
+      "ms": 1468,
+      "notes": [
+        "The whole result is transparent: every pixel matched the background. Review the background color, threshold and protected regions before using this video."
+      ],
+      "error": null
+    },
+    {
+      "test": "cancel-during-frames-and-source-lock",
+      "pass": true,
+      "ms": 1093,
+      "notes": [
+        "source locked=True; Cancel() 0ms; Canceled after 31ms; temp clean; source unlocked afterwards; status 'Background processing cancelled.'"
+      ],
+      "error": null
+    },
+    {
+      "test": "dispose-during-final-encode",
+      "pass": true,
+      "ms": 2057,
+      "notes": [
+        "Dispose() 0ms during converter stage; Canceled; temp clean"
+      ],
+      "error": null
+    },
+    {
+      "test": "dispose-after-success-and-concurrent-unique",
+      "pass": true,
+      "ms": 1149,
+      "notes": [
+        "unique outputs; result alive until Dispose; dispose deletes only own files; sentinel untouched"
+      ],
+      "error": null
+    },
+    {
+      "test": "bounded-memory-720p-full-convert",
+      "pass": true,
+      "ms": 6389,
+      "notes": [
+        "1280x720x240 (843 MiB raw RGBA): harness working set +25 MiB peak; PackedH264 frames=240"
+      ],
+      "error": null
+    },
+    {
+      "test": "unicode-metacharacter-paths",
+      "pass": true,
+      "ms": 1579,
+      "notes": [
+        "source=배경 제거 & ^ %CD% [1] 'q'.mp4 → converted.mp4"
+      ],
+      "error": null
+    },
+    {
+      "test": "argument-validation",
+      "pass": true,
+      "ms": 332,
+      "notes": [
+        "arguments in tool name are not split: Background processing failed: Could not start video tool 'ffmpeg -y': 지정된 파일을 찾을 수 없습니다."
+      ],
+      "error": null
+    },
+    {
+      "test": "exact-source-clock-packed",
+      "pass": true,
+      "ms": 2011,
+      "notes": [
+        "sixty.mp4 → time base 1/60000, all 60 frames exactly 1000 ticks apart",
+        "ntsc-offset-audio.mp4 → time base 1/30000, all 60 frames exactly 1001 ticks apart"
+      ],
+      "error": null
+    },
+    {
+      "test": "open-gop-seek-preview-and-analysis",
+      "pass": true,
+      "ms": 1566,
+      "notes": [
+        "a strict seek into this stream errors ([h264 @ 000001cb98f3e980] mmco: unref short failure); the keyframe seek falls back to an exact sequential decode: five-frame analysis completes, previews of frames 23/35/47/62/95 byte-identical to sequential decode"
+      ],
+      "error": null
+    },
+    {
+      "test": "parallel-matte-equals-sequential-reference",
+      "pass": true,
+      "ms": 643,
+      "notes": [
+        "120 frames across 5 option sets (border/no border, smoothing 0/.15/.5/.9, protected regions, 1280x720) byte-identical on 16 logical processors"
+      ],
+      "error": null
+    },
+    {
+      "test": "frame-hash-matches-ffmpeg-murmur3",
+      "pass": true,
+      "ms": 551,
+      "notes": [
+        "SMHasher MurmurHash3_x64_128 verification value 0x6384BA69 reproduced; with FFmpeg's seed it equals FFmpeg murmur3 for 12 lengths 1..8294405 bytes at an unaligned offset"
+      ],
+      "error": null
+    },
+    {
+      "test": "reject-transparent-source-accept-opaque-alpha-channel",
+      "pass": true,
+      "ms": 1802,
+      "notes": [
+        "Background processing failed: Frame 0 already contains transparent pixels. Background removal only adds alpha to opaque videos and never replaces existing alpha; convert this video with Tools > Video to Unity > 영상 이펙트 만들기 instead.",
+        "50% alpha ProRes 4444 and VP8 alpha WebM rejected in Analyze/Preview/Convert with redirect; ProRes 4444 whose alpha is opaque converts normally"
+      ],
+      "error": null
+    }
+  ]
+}
